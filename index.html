@@ -3,10 +3,199 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Техномарт</title>
+	<meta name="description" content="" />
+	<meta name="keywords" content="" />
   </head>
   <body>
-
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">HTML и CSS, уровень 1</a>».</p>
-
-  </body>
+	<header class="main-header">
+		<!-- вставляем logo Техномарт -->
+		<a class="logo-head">
+			<img src="img/logo.svg" height="45" width="220" alt="Техномарт" title="Логотип магазина">
+		</a>
+			<!-- вставляем слоган-заглавие -->
+			<h1 class="header-slogan">
+				 Интернет-магазин<br>
+				 строительных материалов<br>
+				 и инструментов для ремонта
+			</h1>
+			  <!-- вставляем контакты верхнего колонтитула -->
+			  <div class="head-contacts">
+				<p id="top-phone-number">+7 (812)555-05-55</p>
+				<p id="head-address">г.Санкт-Петербург, ул. Большая Конюшенная, д.19/8</p>
+			  </div>
+			  <!-- здесь будут вставлены формы поиска, закладок, корзины -->
+			  <div class="header-forms">
+				<!--
+				  <form class="header-search"></form>
+				  <form class="header-bookmark"></form>
+				  <form class="header-basket"></form>
+				-->
+			  </div>
+			  <!-- здесь будут вставлены элементы входа пользователя и его регистрации -->
+			   <ul class="user-tools">
+				 <li class="login-link">Войти</li>
+				 <li class="registration-link">Регистрация</li>
+			   </ul>
+			  <!-- здесь вставляем элемент-ссылку на оформление заказа  -->
+			 <a class="head-purchase-order" href="purchase_order.html"><img src="img/purchase_order.png" width="150" height="45" alt="Оформить заказ"></a>
+		  <!-- вставляем navigation panel -->
+			<nav class="header-nav">
+				<ul class="top-nav">
+				  <li><a href="index.html">Главная</a></li>
+				  <li><a href="about_company.html">Компания</a></li>
+				  <li><a href="catalog.html">Каталог</a></li>
+				  <li><a href="news.html">Новости</a></li>
+				  <li><a href="special_offer.html">Спецпредложения</a></li>
+				  <li><a href="delivery.html">Доставка</a></li>
+				  <li><a href="contacts.html">Контакты</a></li>
+				</ul>
+			</nav>
+	</header>
+	<main class="basic-content">
+		<!-- тут будет вставлен "Каталог" -->
+		<section class="store-catalog">
+		 <h2>КАТАЛОГ</h2>
+		 <figure></figure>
+		</section>
+		<!-- тут вставляем "Популярные товары" -->
+		<section class="popular-goods">
+		  <h2>ПОПУЛЯРНЫЕ ТОВАРЫ:</h2>
+		    <ul id="popular-goods">
+			 <li><a href="#"><img src="img/bosh_1.png" width="220" height="315" alt="BOSH 1">Перфоратор BOSH 1</a></li>
+			 <li><a href="#"><img src="img/bosh_2.png" width="220" height="315" alt="BOSH 2">Перфоратор BOSH 2</a></li>
+			 <li><a href="#"><img src="img/bosh_3.png" width="220" height="315" alt="BOSH 3">Перфоратор BOSH 3</a></li>
+			 <li><a href="#"><img src="img/bosh_4.png" width="220" height="315" alt="BOSH 4">Перфоратор BOSH 4</a></li>
+			</ul>
+		  <a class="all-popular-goods" href="all_popular_goods.html">ВСЕ ПОПУЛЯРНЫЕ ТОВАРЫ</a>
+		</section>
+		<!-- тут вставляем "Популярные производители" -->
+		<section class="popular-manufacturer">
+		  <h2>ПОПУЛЯРНЫЕ ПРОИЗВОДИТЕЛИ:</h2>
+		  	<ul id="popular-manufacturer">
+			 <li><a href="https://www.bosch.com/"><img src="#" alt="BOSH">BOSH</a></li>
+			 <li><a href="http://makita.ru/"><img src="#" alt="Makita">Makita</a></li>
+			 <li><a href="https://www.dewalt.com/"><img src="#" alt="DeWalt">DeWalt</a></li>
+			 <li><a href="http://www.interskol.ru/"><img src="#" alt="ИНТЕРСКОЛ">ИНТЕРСКОЛ</a></li>
+			 <li><a href="http://www.hitachi.com/"><img src="#" alt="HITACHI">HITACHI</a></li>
+			 <li><a href="https://www.lg.com/"><img src="#" alt="LG">LG</a></li>
+			 <li><a href="https://www.aeg.ru/"><img src="#" alt="AEG">AEG</a></li>
+			 <li><a href="https://www.metabo.com/"><img src="#" alt="metabo">metabo</a></li>
+			</ul>
+		  <a class="all-manufacturer" href="manufacturer.html">ВСЕ ПРОИЗВОДИТЕЛИ</a>
+		</section>
+		<!-- тут вставляем "СЕРВИСЫ" -->
+		<section class="services">
+		  <h2>СЕРВИСЫ</h2>
+		   <p>
+			 	Хороший интернет-магазин отличается от плохого не только ценами!<br>
+			 	Мы стараемся изо всех сил, чтобы сделать Ваши покупки приятными.
+		   </p>
+		   <ul id="services">
+			<li><a href="delivery.html">Доставка</a></li>
+			<li><a href="warranty.html">Гарантия</a></li>
+			<li><a href="credit.html">Кредит</a></li>
+		   </ul>
+		   <!-- тут вставляем сменяемые страницы "Сервисов": "Доставка"; "Гарантия"; "Кредит" -->
+		   <div class="delivery">
+			<h2>ДОСТАВКА</h2>
+			<p>
+			  <!-- не уверен, что тут нужен <br> возможно это регулируется размером окна -->
+			  	Мы с удовольствием доставим ваш товар прямо<br> 
+			  	к вашему подъезду совершенно бесплатно!<br>
+			  	Ведь мы неплохо заработаем,<br> 
+			  	поднимая его на ваш этаж!
+			</p>
+		   </div>
+		</section>
+		<!-- тут вставляем блоки информации имеющие непосредственное отношение к компании -->
+		<section class="company-mix">
+			<div class="company-info">
+				<!-- контент этой части занимает 3/4 ширины страницы -->
+			  <h2>КОМПАНИЯ "ТЕХНОМАРТ"</h2>
+			   <p>
+			     <!-- вероятно размер этого текстового блока регулируется размером окна -->
+			     	Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для ремонта и<br> строительства не оставит равнодушными любителей сэкономить на гастарбайтерах.
+			   </p>
+			   <br>
+			   <p>
+			     	Мы можем доставить ваш товар в самые отдаленные точки России!<br>
+				 	Техномарт работает со многими транспортными компаниями: 
+			   </p>
+			   <ul class="logistics-companies">
+				 <li><a href="https://spb.dellin.ru/">Деловые линии</a></li>
+				 <li><a href="http://www.autotrading.ru/">Автотрейдинг</a></li>
+				 <li><a href="https://www.jde.ru/">ЖелДорЭкспедиция</a></li>
+			   </ul>
+			   <!-- здесь вставляем элемент-ссылку на информацию о компании  -->
+			   <a href="about_company.html">Подробнее о компании</a>
+			</div>
+			<div class="contacts-maps">
+				<!-- контент этой части занимает 1/4 ширины страницы -->
+			  <h2>КОНТАКТЫ</h2>
+			   <p>Вы можете забрать товар сами,<br>
+				  заехав в наш офис:
+			   </p>
+			   <!-- здесь вставляем картинку-ссылку на карту, вызывающую всплывающее окно -->
+			   <a href="map.html"><img src="map.png" alt="Карта"/></a>
+			   <!-- здесь вставляем элемент E-Mail-ссылку на "Заблудились? Напишите нам!"  -->
+			   <p><a href="mailto:ask@technomart.ru">Заблудились? Напишите нам!</a></p> 
+			</div>
+		</section>
+		<footer class="main-footer">
+			<!-- вставляем logo Техномарт -->
+			<a class="logo-bottom">
+				<img src="img/logo.svg" height="45" width="220" alt="Техномарт" title="Логотип магазина">
+			</a>
+			<!-- вставляем первую нижнюю панель навигации -->
+			<nav class="footer-nav-one">
+				<ul class="bottom-nav-one">
+				  <li><a href="about_company.html">Компания</a></li>
+				  <li><a href="news.html">Новости</a></li>
+				  <li><a href="catalog.html">Каталог</a></li>
+				  <li><a href="delivery.html">Доставка</a></li>
+				  <li><a href="contacts.html">Контакты</a></li>
+				</ul>
+			</nav>
+			<!-- вставляем контакты нижнего колонтитула -->
+			<div class="bottom-contacts">
+				<p id="bottom-address">
+					г.Санкт-Петербург, ул. Большая Конюшенная, д.19/8
+				</p>
+				<p id="bottom-phone-number">
+					+7 (812)555-05-55
+				</p>
+			</div>
+			<!-- вставляем вторую нижнюю панель навигации -->  
+			<nav class="footer-nav-two">
+				<ul class="bottom-nav-two">
+				  <li><a href="about_company.html">Материалы</a></li>
+				  <li><a href="appliances.html">Техника</a></li>
+				  <li><a href="tools.html">Инструмент</a></li>
+				  <li><a href="special_offer.html">Спецпредложения</a></li>
+				</ul>
+			</nav>
+			<p class="bottom-copyright">
+				&#x000A9;2010-2019 Компания &laquo;Техномарт&raquo;<br>
+				Все права защищены
+			</p>
+			 	<a class="social-btn" href="#">Вконтакте</a>
+			 	<a class="social-btn" href="#">Фейсбук</a>
+			 	<a class="social-btn" href="#">Инстаграм</a>
+			<p class="bottom-E-Mail">
+				Обратная связь:<br>
+				mail@htmlacademy.ru
+			</p>
+			<p class="developer">
+				Разработано -<br>
+				htmlacademy.ru
+			</p>
+		</footer>
+	</main>
+   </body>
 </html>
+
+
+
+
+
+
