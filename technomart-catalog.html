@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Техномарт каталог</title>
+	<meta name="description" content="" />
+	<meta name="keywords" content="" />
+  </head>
+  <body>
+		<header class="main-header">
+			<!-- вставляем logo Техномарт -->
+			<a class="logo-head">
+				<img src="img/logo.svg" height="45" width="220" alt="Техномарт" title="Логотип магазина">
+			</a>
+				<!-- вставляем слоган-заглавие -->
+				<h1 class="header-slogan">
+					 Интернет-магазин
+					 строительных материалов
+					 и инструментов для ремонта
+				</h1>
+				  <!-- вставляем контакты верхнего колонтитула -->
+				  <div class="head-contacts">
+					<p class="top-phone-number">+7 (812)555-05-55</p>
+					<p class="head-address">г.Санкт-Петербург, ул. Большая Конюшенная, д.19/8</p>
+				  </div>
+				  <!-- здесь будут вставлены формы поиска, закладок, корзины -->
+				  <div class="header-forms">
+					<!--
+					  <form class="header-search"></form>
+					  <form class="header-bookmark"></form>
+					  <form class="header-basket"></form>
+					-->
+				  </div>
+				  <!-- здесь будут вставлены элементы входа пользователя и его регистрации -->
+				  <div class="user-fields">
+						<fieldset>
+							<label for="show-username">РАВШАН ДЖАМШУТОВИЧ</label>
+						</fieldset>
+					<ul>
+						<li><a class="my-purchase" href="#">Мои заказы</a></li>
+						<li><a class="my-personal-directory" href="#">Личный кабинет</a></li>
+					</ul>
+				  </div>
+				<!-- вставляем navigation panel -->
+				<nav class="header-nav">
+					<ul class="top-nav">
+					  <li><a href="index.html">Главная</a></li>
+					  <li><a href="about_company.html">Компания</a></li>
+					  <li><a href="catalog.html">Каталог</a></li>
+					  <li><a href="news.html">Новости</a></li>
+					  <li><a href="special_offer.html">Спецпредложения</a></li>
+					  <li><a href="delivery.html">Доставка</a></li>
+					  <li><a href="contacts.html">Контакты</a></li>
+					</ul>
+				</nav>
+		</header>
+		<main class="store-catalog">
+			<div class="catalog-nav">
+				<ul class="catalog-links">
+					 <li class="link-to-catalog"><a href="catalog.html">КАТАЛОГ</a></li>
+					 <li class="link-to-tools"><a href="tools.html">ИНСТРУМЕНТ</a></li>
+					 <li class="link-to-hammer-drill">ПЕРФОРАТОРЫ</li>
+				</ul>
+			</div>
+			<h2 class="hammer-drill-h2">ПЕРФОРАТОРЫ</ h2>
+		  <section class="filters">
+			<!-- Здесь вставлена форма ФИЛЬТРЫ -->
+		  </section>
+			<!-- Карточки товаров-->
+		  <section class="hammer-drills">
+			<ul class="hammer-drills-bosch-list">
+			<!-- Первая карточка товара BOSCH верхний ряд -->
+				<li class="hammer-drill-bosch-2">
+					<h3>
+					  <a href="hammer-drill-bosch-2.html">
+					    <span class="hammer-drill-bosch">Перфоратор BOSCH</span>
+						<span class="hammer-drill-bosch-title">BFG 3000</span>
+					  </a>
+					</h3>
+					<p class="hammer-drill-img">
+					 <a href="hammer-drill-bosch-2.html">
+					  <img src="img/bosh_3000.png" width="220" height="315" alt="BOSH BFG 3000">
+					 </a>
+					</p>
+					<p class="hammer-drill-price">
+					 <!-- тут используем стиль: text-decoration [line-through] -->
+					 <span class="price-discount">22 500 Р.</span>
+					 <a class="go-purchase-button" href="#">15 500 P.</a>
+					</p>
+				</li>
+			<!-- Вторая карточка товара BOSCH верхний ряд -->
+				<li class="hammer-drill-bosch-3">
+					<h3>
+					  <a href="hammer-drill-bosch-3.html">
+					    <span class="hammer-drill-bosch">Перфоратор BOSCH</span>
+						<span class="hammer-drill-bosch-title">BFG 6000</span>
+					  </a>
+					</h3>
+					<p class="hammer-drill-img">
+					 <a href="hammer-drill-bosch-3.html">
+					  <img src="img/bosh_6000.png" width="220" height="315" alt="BOSH BFG 6000">
+					 </a>
+					</p>
+					<p class="hammer-drill-price">
+					 <!-- тут используем стиль: text-decoration [line-through] -->
+					 <span class="price-discount">30 500 Р.</span>
+					 <a class="go-purchase-button" href="#">25 500 P.</a>
+					</p>
+				</li>
+			<!-- Третья карточка товара BOSCH верхний ряд (с кнопкой)-->
+				<li class="hammer-drill-bosch-4">
+					<h3>
+					  <a href="hammer-drill-bosch-4.html">
+					    <span class="hammer-drill-bosch">Перфоратор BOSCH</span>
+						<span class="hammer-drill-bosch-title">BFG 2000</span>
+					  </a>
+					</h3>
+					<!--  это замена картинки товара на кнопки 'купить' и в 'закладки'  -->
+					<p class="purchase-options">
+					 <a class="purchase-now-btn" href="#">КУПИТЬ</a>
+					 <a class="save-to-bookmark" href="#">В ЗАКЛАДКИ</a>
+					</p>
+					<p class="hammer-drill-price">
+					 <a class="go-purchase-button" href="#">12 500 P.</a>
+					</p>
+				</li>
+			<!-- Четвёртая карточка товара BOSCH второй ряд -->
+				<li class="hammer-drill-bosch-2">
+					<h3>
+					  <a href="hammer-drill-bosch-2.html">
+					    <span class="hammer-drill-bosch">Перфоратор BOSCH</span>
+						<span class="hammer-drill-bosch-title">BFG 3000</span>
+					  </a>
+					</h3>
+					<p class="hammer-drill-img">
+					 <a href="hammer-drill-bosch-2.html">
+					  <img src="img/bosh_3000.png" width="220" height="315" alt="BOSH BFG 3000">
+					 </a>
+					</p>
+					<p class="hammer-drill-price">
+					 <!-- тут используем стиль: text-decoration [line-through] -->
+					 <span class="price-discount">22 500 Р.</span>
+					 <a class="go-purchase-button" href="#">15 500 P.</a>
+					</p>
+				</li>
+			<!-- Пятая карточка товара BOSCH второй ряд -->
+				<li class="hammer-drill-bosch-3">
+					<h3>
+					  <a href="hammer-drill-bosch-3.html">
+					    <span class="hammer-drill-bosch">Перфоратор BOSCH</span>
+						<span class="hammer-drill-bosch-title">BFG 6000</span>
+					  </a>
+					</h3>
+					<p class="hammer-drill-img">
+					 <a href="hammer-drill-bosch-3.html">
+					  <img src="img/bosh_6000.png" width="220" height="315" alt="BOSH BFG 6000">
+					 </a>
+					</p>
+					<p class="hammer-drill-price">
+					 <!-- тут используем стиль: text-decoration [line-through] -->
+					 <span class="price-discount">30 500 Р.</span>
+					 <a class="go-purchase-button" href="#">25 500 P.</a>
+					</p>
+				</li>
+			<!-- Шестая карточка товара BOSCH второй ряд -->
+				<li class="hammer-drill-bosch-4">
+					<h3>
+					  <a href="hammer-drill-bosch-4.html">
+					    <span class="hammer-drill-bosch">Перфоратор BOSCH</span>
+						<span class="hammer-drill-bosch-title">BFG 2000</span>
+					  </a>
+					</h3>
+					<p class="hammer-drill-img">
+					 <a href="hammer-drill-bosch-4.html">
+					  <img src="img/bosh_2000.png" width="220" height="315" alt="BOSH BFG 2000">
+					 </a>
+					</p>
+					<p class="hammer-drill-price">
+					 <a class="go-purchase-button" href="#">12 500 P.</a>
+					</p>
+				</li>
+			<!-- Седьмая карточка товара BOSCH третий ряд -->
+				<li class="hammer-drill-bosch-2">
+					<h3>
+					  <a href="hammer-drill-bosch-2.html">
+					    <span class="hammer-drill-bosch">Перфоратор BOSCH</span>
+						<span class="hammer-drill-bosch-title">BFG 3000</span>
+					  </a>
+					</h3>
+					<p class="hammer-drill-img">
+					 <a href="hammer-drill-bosch-2.html">
+					  <img src="img/bosh_3000.png" width="220" height="315" alt="BOSH BFG 3000">
+					 </a>
+					</p>
+					<p class="hammer-drill-price">
+					 <!-- тут используем стиль: text-decoration [line-through] -->
+					 <span class="price-discount">22 500 Р.</span>
+					 <a class="go-purchase-button" href="#">15 500 P.</a>
+					</p>
+				</li>
+			<!-- Восьмая карточка товара BOSCH третий ряд -->
+				<li class="hammer-drill-bosch-3">
+					<h3>
+					  <a href="hammer-drill-bosch-3.html">
+					    <span class="hammer-drill-bosch">Перфоратор BOSCH</span>
+						<span class="hammer-drill-bosch-title">BFG 6000</span>
+					  </a>
+					</h3>
+					<p class="hammer-drill-img">
+					 <a href="hammer-drill-bosch-3.html">
+					  <img src="img/bosh_6000.png" width="220" height="315" alt="BOSH BFG 6000">
+					 </a>
+					</p>
+					<p class="hammer-drill-price">
+					 <!-- тут используем стиль: text-decoration [line-through] -->
+					 <span class="price-discount">30 500 Р.</span>
+					 <a class="go-purchase-button" href="#">25 500 P.</a>
+					</p>
+				</li>
+			<!-- Девятая карточка товара BOSCH третий ряд -->
+				<li class="hammer-drill-bosch-4">
+					<h3>
+					  <a href="hammer-drill-bosch-4.html">
+					    <span class="hammer-drill-bosch">Перфоратор BOSCH</span>
+						<span class="hammer-drill-bosch-title">BFG 2000</span>
+					  </a>
+					</h3>
+					<p class="hammer-drill-img">
+					 <a href="hammer-drill-bosch-4.html">
+					  <img src="img/bosh_2000.png" width="220" height="315" alt="BOSH BFG 2000">
+					 </a>
+					</p>
+					<p class="hammer-drill-price">
+					 <a class="go-purchase-button" href="#">12 500 P.</a>
+					</p>
+				</li>
+			</ul>
+			<ul class="pagination-list">
+				<li class="pagination-item pagination-item-current"><a>1</a></li>
+				<li class="pagination-item"><a href="#">2</a></li>
+				<li class="pagination-item"><a href="#">3</a></li>
+				<li class="pagination-item"><a href="#">СЛЕДУЮЩАЯ</a></li>
+			</ul>
+		  </section>
+		  <section class="couple-words">
+			<h2>ПАРА СЛОВ О ПЕРФОРАТОРАХ</h2>
+			 <p class="about-hammer-drill">
+				Перфоратор-универсальный строительный инструмент. Предназначен для сверления и долбления отверстий в кирпиче, бетоне и камне. Существуют электромеханические и пневматические перфораторы. Современные модели могут выполнять функции дрели, шуруповёрта и отбойного молотка. В ассортиментном ряду есть выбор "трёхрежимников": в одном устройстве будут совмещены отбойный молоток и ударная дрель.
+			 </p>
+		  </section>
+		</main>
+		<footer class="main-footer">
+			<!-- вставляем logo Техномарт -->
+			<a class="logo-bottom">
+				<img src="img/logo.svg" height="45" width="220" alt="Техномарт" title="Логотип магазина">
+			</a>
+			<!-- вставляем первую нижнюю панель навигации -->
+			<nav class="footer-nav-one">
+				<ul class="bottom-nav-one">
+				  <li><a href="about_company.html">Компания</a></li>
+				  <li><a href="news.html">Новости</a></li>
+				  <li><a href="catalog.html">Каталог</a></li>
+				  <li><a href="delivery.html">Доставка</a></li>
+				  <li><a href="contacts.html">Контакты</a></li>
+				</ul>
+			</nav>
+			<!-- вставляем контакты нижнего колонтитула -->
+			<div class="bottom-contacts">
+				<p class="bottom-address">г.Санкт-Петербург, ул. Большая Конюшенная, д.19/8</p>
+				<p class="bottom-phone-number">+7 (812)555-05-55</p>
+			</div>
+			<!-- вставляем вторую нижнюю панель навигации -->  
+			<nav class="footer-nav-two">
+				<ul class="bottom-nav-two">
+				  <li><a href="about_company.html">Материалы</a></li>
+				  <li><a href="appliances.html">Техника</a></li>
+				  <li><a href="tools.html">Инструмент</a></li>
+				  <li><a href="special_offer.html">Спецпредложения</a></li>
+				</ul>
+			</nav>
+			<p class="bottom-copyright">
+			&#x000A9;2010-2019 Компания &laquo;Техномарт&raquo;
+			Все права защищены
+			</p>
+			 <a class="social-btn" href="#">Вконтакте</a>
+			 <a class="social-btn" href="#">Фейсбук</a>
+			 <a class="social-btn" href="#">Инстаграм</a>
+			<p class="bottom-E-Mail">
+			Обратная связь:
+			mail@htmlacademy.ru
+			</p>
+			<p class="developer">
+			Разработано -
+			htmlacademy.ru
+			</p>
+		</footer>
+  </body>
+</html>

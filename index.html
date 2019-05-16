@@ -41,45 +41,115 @@
 		  <!-- вставляем navigation panel -->
 			<nav class="header-nav">
 				<ul class="top-nav">
-				  <li><a href="index.html">Главная</a></li>
-				  <li><a href="about_company.html">Компания</a></li>
-				  <li><a href="catalog.html">Каталог</a></li>
-				  <li><a href="news.html">Новости</a></li>
-				  <li><a href="special_offer.html">Спецпредложения</a></li>
-				  <li><a href="delivery.html">Доставка</a></li>
-				  <li><a href="contacts.html">Контакты</a></li>
+					<li><a href="index.html">Главная</a></li>
+					<li><a href="about_company.html">Компания</a></li>
+					<li><a href="catalog.html">Каталог</a></li>
+					<li><a href="news.html">Новости</a></li>
+					<li><a href="special_offer.html">Спецпредложения</a></li>
+					<li><a href="delivery.html">Доставка</a></li>
+					<li><a href="contacts.html">Контакты</a></li>
 				</ul>
 			</nav>
 	</header>
 	<main class="basic-content">
-		<!-- тут будет вставлен "Каталог" -->
-		<section class="store-catalog">
-		 <h2>КАТАЛОГ</h2>
-		 <figure></figure>
+		<!-- тут будет вставлена форма "Каталог" -->
+		<section class="catalog-preview">
+		 <!--  !!!заголовок КАТАЛОГ делаем невидимым!!!  -->
+		 <h2 class="visually-hidden">КАТАЛОГ</h2>
+		 
 		</section>
 		<!-- тут вставляем "Популярные товары" -->
 		<section class="popular-goods">
-		  <h2>ПОПУЛЯРНЫЕ ТОВАРЫ:</h2>
+		  <h2 class="popular-goods-h2">ПОПУЛЯРНЫЕ ТОВАРЫ:</h2>
 		    <ul class="popular-goods-list">
-			 <li><a href="#"><img src="img/bosh_1.png" width="220" height="315" alt="BOSH 1">Перфоратор BOSH 1</a></li>
-			 <li><a href="#"><img src="img/bosh_2.png" width="220" height="315" alt="BOSH 2">Перфоратор BOSH 2</a></li>
-			 <li><a href="#"><img src="img/bosh_3.png" width="220" height="315" alt="BOSH 3">Перфоратор BOSH 3</a></li>
-			 <li><a href="#"><img src="img/bosh_4.png" width="220" height="315" alt="BOSH 4">Перфоратор BOSH 4</a></li>
+				<li class="hammer-drill-bosch-4">
+					<h3>
+					  <a href="hammer-drill-bosch-4.html">
+					    <span class="hammer-drill-bosch">Перфоратор BOSCH</span>
+						<span class="hammer-drill-bosch-title">BFG 9000</span>
+					  </a>
+					</h3>
+					<p class="hammer-drill-img">
+					 <a href="hammer-drill-bosch-4.html">
+					  <img src="img/bosh_9000.png" width="220" height="315" alt="BOSH BFG 9000">
+					 </a>
+					</p>
+					<p class="hammer-drill-price">
+					<!-- тут используем стиль: text-decoration [line-through] -->
+					 <span class="price-discount">32 500 Р.</span>
+					 <a class="go-purchase-button" href="#">25 500 P.</a>
+					</p>
+				</li>
+				<!-- карточка 2  -->
+				<li class="hammer-drill-bosch-2">
+					<h3>
+					  <a href="hammer-drill-bosch-2.html">
+					    <span class="hammer-drill-bosch">Перфоратор BOSCH</span>
+						<span class="hammer-drill-bosch-title">BFG 3000</span>
+					  </a>
+					</h3>
+					<p class="hammer-drill-img">
+					 <a href="hammer-drill-bosch-2.html">
+					  <img src="img/bosh_3000.png" width="220" height="315" alt="BOSH BFG 3000">
+					 </a>
+					</p>
+					<p class="hammer-drill-price">
+					 <!-- тут используем стиль: text-decoration [line-through] -->
+					 <span class="price-discount">22 500 Р.</span>
+					 <a class="go-purchase-button" href="#">15 500 P.</a>
+					</p>
+				</li>
+				<!-- карточка 3  -->
+				<li class="hammer-drill-bosch-3">
+					<h3>
+					  <a href="hammer-drill-bosch-3.html">
+					    <span class="hammer-drill-bosch">Перфоратор BOSCH</span>
+						<span class="hammer-drill-bosch-title">BFG 6000</span>
+					  </a>
+					</h3>
+					<p class="hammer-drill-img">
+					 <a href="hammer-drill-bosch-3.html">
+					  <img src="img/bosh_6000.png" width="220" height="315" alt="BOSH BFG 6000">
+					 </a>
+					</p>
+					<p class="hammer-drill-price">
+					 <!-- тут используем стиль: text-decoration [line-through] -->
+					 <span class="price-discount">30 500 Р.</span>
+					 <a class="go-purchase-button" href="#">25 500 P.</a>
+					</p>
+				</li>
+				<!-- карточка 4  -->
+				<li class="hammer-drill-bosch-4">
+					<h3>
+					  <a href="hammer-drill-bosch-4.html">
+					    <span class="hammer-drill-bosch">Перфоратор BOSCH</span>
+						<span class="hammer-drill-bosch-title">BFG 2000</span>
+					  </a>
+					</h3>
+					<p class="hammer-drill-img">
+					 <a href="hammer-drill-bosch-4.html">
+					  <img src="img/bosh_2000.png" width="220" height="315" alt="BOSH BFG 2000">
+					 </a>
+					</p>
+					<p class="hammer-drill-price">
+					 <a class="go-purchase-button" href="#">12 500 P.</a>
+					</p>
+				</li>
 			</ul>
 		  <a class="all-popular-goods" href="all_popular_goods.html">ВСЕ ПОПУЛЯРНЫЕ ТОВАРЫ</a>
 		</section>
 		<!-- тут вставляем "Популярные производители" -->
 		<section class="popular-manufacturer">
-		  <h2>ПОПУЛЯРНЫЕ ПРОИЗВОДИТЕЛИ:</h2>
+		  <h2 class="popular-manufacturer-h2">ПОПУЛЯРНЫЕ ПРОИЗВОДИТЕЛИ:</h2>
 		  	<ul class="popular-manufacturer-list">
-			 <li><a href="https://www.bosch.com/"><img src="#" alt="BOSH">BOSH</a></li>
-			 <li><a href="http://makita.ru/"><img src="#" alt="Makita">Makita</a></li>
-			 <li><a href="https://www.dewalt.com/"><img src="#" alt="DeWalt">DeWalt</a></li>
-			 <li><a href="http://www.interskol.ru/"><img src="#" alt="ИНТЕРСКОЛ">ИНТЕРСКОЛ</a></li>
-			 <li><a href="http://www.hitachi.com/"><img src="#" alt="HITACHI">HITACHI</a></li>
-			 <li><a href="https://www.lg.com/"><img src="#" alt="LG">LG</a></li>
-			 <li><a href="https://www.aeg.ru/"><img src="#" alt="AEG">AEG</a></li>
-			 <li><a href="https://www.metabo.com/"><img src="#" alt="metabo">metabo</a></li>
+				 <li><a href="https://www.bosch.com/"><img src="#" alt="BOSH">BOSH</a></li>
+				 <li><a href="http://makita.ru/"><img src="#" alt="Makita">Makita</a></li>
+				 <li><a href="https://www.dewalt.com/"><img src="#" alt="DeWalt">DeWalt</a></li>
+				 <li><a href="http://www.interskol.ru/"><img src="#" alt="ИНТЕРСКОЛ">ИНТЕРСКОЛ</a></li>
+				 <li><a href="http://www.hitachi.com/"><img src="#" alt="HITACHI">HITACHI</a></li>
+				 <li><a href="https://www.lg.com/"><img src="#" alt="LG">LG</a></li>
+				 <li><a href="https://www.aeg.ru/"><img src="#" alt="AEG">AEG</a></li>
+				 <li><a href="https://www.metabo.com/"><img src="#" alt="metabo">metabo</a></li>
 			</ul>
 		  <a class="all-manufacturer" href="manufacturer.html">ВСЕ ПРОИЗВОДИТЕЛИ</a>
 		</section>
@@ -187,12 +257,8 @@
 			</p>
 		</footer>
 	</main>
-   </body>
+  </body>
 </html>
-
-
-
-
 
 
 
