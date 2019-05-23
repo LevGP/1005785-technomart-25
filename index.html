@@ -7,38 +7,38 @@
 	<meta name="keywords" content="" />
   </head>
   <body>
-	<header class="main-header">
-		<!-- вставляем logo Техномарт -->
-		<a class="logo-head">
-			<img src="img/logo.svg" height="45" width="220" alt="Техномарт" title="Логотип магазина">
-		</a>
-			<!-- вставляем слоган-заглавие -->
+		<header class="main-header">
+			<!-- вставляем logo Техномарт -->
+			<a class="logo-head" name="page_one_head">
+				<img src="img/technomart_logo_btn.png" height="45" width="220" alt="Техномарт" title="Логотип магазина">
+			</a>
+				<!-- вставляем слоган-заглавие -->
 			<h1 class="header-slogan">
-				 Интернет-магазин
-				 строительных материалов
-				 и инструментов для ремонта
+				Интернет-магазин
+				строительных материалов
+				и инструментов для ремонта
 			</h1>
-			  <!-- вставляем контакты верхнего колонтитула -->
-			  <div class="head-contacts">
+				  <!-- вставляем контакты верхнего колонтитула -->
+			<div class="head-contacts">
 				<p class="top-phone-number">+7 (812)555-05-55</p>
 				<p class="head-address">г.Санкт-Петербург, ул. Большая Конюшенная, д.19/8</p>
-			  </div>
-			  <!-- здесь будут вставлены формы поиска, закладок, корзины -->
-			  <div class="header-forms">
-				<!--
-				  <form class="header-search"></form>
-				  <form class="header-bookmark"></form>
-				  <form class="header-basket"></form>
-				-->
-			  </div>
-			  <!-- здесь будут вставлены элементы входа пользователя и его регистрации -->
-			   <ul class="user-tools">
-				 <li class="login-link">Войти</li>
-				 <li class="registration-link">Регистрация</li>
-			   </ul>
-			  <!-- здесь вставляем элемент-ссылку на оформление заказа  -->
-			 <a class="head-purchase-order" href="purchase_order.html"><img src="img/purchase_order.png" width="150" height="45" alt="Оформить заказ"></a>
-		  <!-- вставляем navigation panel -->
+			</div>
+				  <!-- здесь будут вставлены формы поиска, закладок, корзины -->
+			<div class="header-forms">
+					<!--
+					  <form class="header-search"></form>
+					  <form class="header-bookmark"></form>
+					  <form class="header-basket"></form>
+					-->
+			</div>
+				  <!-- здесь будут вставлены элементы входа пользователя и его регистрации -->
+				   <ul class="user-tools">
+					 <li class="login-link">Войти</li>
+					 <li class="registration-link">Регистрация</li>
+				   </ul>
+				  <!-- здесь вставляем элемент-ссылку на оформление заказа  -->
+				 <a class="head-purchase-order" href="purchase_order.html" title="Оформить заказ" alt="Оформить заказ" >Оформить заказ</a>
+			  <!-- вставляем navigation panel -->
 			<nav class="header-nav">
 				<ul class="top-nav">
 					<li><a href="index.html">Главная</a></li>
@@ -50,171 +50,174 @@
 					<li><a href="contacts.html">Контакты</a></li>
 				</ul>
 			</nav>
-	</header>
-	<main class="basic-content">
-		<!-- тут будет вставлена форма "Каталог" -->
-		<section class="catalog-preview">
-		 <!--  !!!заголовок КАТАЛОГ делаем невидимым!!!  -->
-		 <h2 class="visually-hidden">КАТАЛОГ</h2>
-		 
-		</section>
-		<!-- тут вставляем "Популярные товары" -->
-		<section class="popular-goods">
-		  <h2 class="popular-goods-h2">ПОПУЛЯРНЫЕ ТОВАРЫ:</h2>
-		    <ul class="popular-goods-list">
-				<li class="hammer-drill-bosch-all">
-					<h3>
-					  <a href="hammer-drill-bosch-4.html">
-					    <span class="hammer-drill-bosch">Перфоратор BOSCH</span>
-						<span class="hammer-drill-bosch-title">BFG 9000</span>
-					  </a>
-					</h3>
-					<p class="hammer-drill-img">
-					 <a href="hammer-drill-bosch-4.html">
-					  <img src="img/bosh_9000.png" width="220" height="315" alt="BOSH BFG 9000">
-					 </a>
-					</p>
-					<p class="hammer-drill-price">
-					<!-- тут используем стиль: text-decoration [line-through] -->
-					 <span class="price-discount">32 500 Р.</span>
-					 <a class="go-purchase-button" href="#">25 500 P.</a>
-					</p>
-				</li>
-				<!-- карточка 2  -->
-				<li class="hammer-drill-bosch-all">
-					<h3>
-					  <a href="hammer-drill-bosch-2.html">
-					    <span class="hammer-drill-bosch">Перфоратор BOSCH</span>
-						<span class="hammer-drill-bosch-title">BFG 3000</span>
-					  </a>
-					</h3>
-					<p class="hammer-drill-img">
-					 <a href="hammer-drill-bosch-2.html">
-					  <img src="img/bosh_3000.png" width="220" height="315" alt="BOSH BFG 3000">
-					 </a>
-					</p>
-					<p class="hammer-drill-price">
-					 <!-- тут используем стиль: text-decoration [line-through] -->
-					 <span class="price-discount">22 500 Р.</span>
-					 <a class="go-purchase-button" href="#">15 500 P.</a>
-					</p>
-				</li>
-				<!-- карточка 3  -->
-				<li class="hammer-drill-bosch-all">
-					<h3>
-					  <a href="hammer-drill-bosch-3.html">
-					    <span class="hammer-drill-bosch">Перфоратор BOSCH</span>
-						<span class="hammer-drill-bosch-title">BFG 6000</span>
-					  </a>
-					</h3>
-					<p class="hammer-drill-img">
-					 <a href="hammer-drill-bosch-3.html">
-					  <img src="img/bosh_6000.png" width="220" height="315" alt="BOSH BFG 6000">
-					 </a>
-					</p>
-					<p class="hammer-drill-price">
-					 <!-- тут используем стиль: text-decoration [line-through] -->
-					 <span class="price-discount">30 500 Р.</span>
-					 <a class="go-purchase-button" href="#">25 500 P.</a>
-					</p>
-				</li>
-				<!-- карточка 4  -->
-				<li class="hammer-drill-bosch-all">
-					<h3>
-					  <a href="hammer-drill-bosch-4.html">
-					    <span class="hammer-drill-bosch">Перфоратор BOSCH</span>
-						<span class="hammer-drill-bosch-title">BFG 2000</span>
-					  </a>
-					</h3>
-					<p class="hammer-drill-img">
-					 <a href="hammer-drill-bosch-4.html">
-					  <img src="img/bosh_2000.png" width="220" height="315" alt="BOSH BFG 2000">
-					 </a>
-					</p>
-					<p class="hammer-drill-price">
-					 <a class="go-purchase-button" href="#">12 500 P.</a>
-					</p>
-				</li>
-			</ul>
-		  <a class="all-popular-goods" href="all_popular_goods.html">ВСЕ ПОПУЛЯРНЫЕ ТОВАРЫ</a>
-		</section>
-		<!-- тут вставляем "Популярные производители" -->
-		<section class="popular-manufacturer">
-		  <h2 class="popular-manufacturer-h2">ПОПУЛЯРНЫЕ ПРОИЗВОДИТЕЛИ:</h2>
-		  	<ul class="popular-manufacturer-list">
-				 <li><a href="https://www.bosch.com/"><img src="#" alt="BOSH">BOSH</a></li>
-				 <li><a href="http://makita.ru/"><img src="#" alt="Makita">Makita</a></li>
-				 <li><a href="https://www.dewalt.com/"><img src="#" alt="DeWalt">DeWalt</a></li>
-				 <li><a href="http://www.interskol.ru/"><img src="#" alt="ИНТЕРСКОЛ">ИНТЕРСКОЛ</a></li>
-				 <li><a href="http://www.hitachi.com/"><img src="#" alt="HITACHI">HITACHI</a></li>
-				 <li><a href="https://www.lg.com/"><img src="#" alt="LG">LG</a></li>
-				 <li><a href="https://www.aeg.ru/"><img src="#" alt="AEG">AEG</a></li>
-				 <li><a href="https://www.metabo.com/"><img src="#" alt="metabo">metabo</a></li>
-			</ul>
-		  <a class="all-manufacturer" href="manufacturer.html">ВСЕ ПРОИЗВОДИТЕЛИ</a>
-		</section>
-		<!-- тут вставляем "СЕРВИСЫ" -->
-		<section class="services">
-		  <h2>СЕРВИСЫ</h2>
-		   <p class="services-txt">
-			 Хороший интернет-магазин отличается от плохого не только ценами!
-			 Мы стараемся изо всех сил, чтобы сделать Ваши покупки приятными.
-		   </p>
-		   <ul class="services-list">
-			<li><a href="delivery.html">Доставка</a></li>
-			<li><a href="warranty.html">Гарантия</a></li>
-			<li><a href="credit.html">Кредит</a></li>
-		   </ul>
-		   <!-- тут вставляем сменяемые страницы "Сервисов": "Доставка"; "Гарантия"; "Кредит" -->
-		   <div class="delivery">
-			<h2>ДОСТАВКА</h2>
-			<p class="delivery-txt">
-			  <!-- не уверен, что тут нужен <br> возможно это регулируется размером окна -->
-			  Мы с удовольствием доставим ваш товар прямо<br> 
-			  к вашему подъезду совершенно бесплатно!
-			  Ведь мы неплохо заработаем,<br> 
-			  поднимая его на ваш этаж!
-			</p>
-		   </div>
-		</section>
-		<!-- тут вставляем блоки информации имеющие непосредственное отношение к компании -->
-		<section class="company-mix">
-			<div class="company-info">
-				<!-- контент этой части занимает 3/4 ширины страницы -->
-			  <h2>КОМПАНИЯ "ТЕХНОМАРТ"</h2>
-			   <p class="company-txt-one">
-			     <!-- вероятно размер этого текстового блока регулируется размером окна -->
-			     Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для ремонта и строительства не оставит равнодушными любителей сэкономить на гастарбайтерах.
+		</header>
+		<main class="basic-content">
+			<!-- тут будет вставлена форма "Каталог" -->
+			<section class="catalog-preview">
+			 <!--  !!!заголовок КАТАЛОГ делаем невидимым!!!  -->
+			 <h2 class="visually-hidden">КАТАЛОГ</h2>
+			 <p class="catalog-slider">
+			  <img src="img/man_w_drill.png" alt="КАТАЛОГ">
+			 </p>
+			</section>
+			<!-- тут вставляем "Популярные товары" -->
+			<section class="popular-goods">
+			  <h2 class="popular-goods-h2">ПОПУЛЯРНЫЕ ТОВАРЫ:</h2>
+			    <ul class="popular-goods-list">
+					<li class="hammer-drill-bosch-all">
+						<h3>
+						  <a href="hammer-drill-bosch-4.html">
+						    <span class="hammer-drill-bosch">Перфоратор BOSCH</span>
+							<span class="hammer-drill-bosch-title">BFG 9000</span>
+						  </a>
+						</h3>
+						<p class="hammer-drill-img">
+						 <a href="hammer-drill-bosch-4.html" title="Hammer-drill Bosch BFG 9000">
+						  <img src="img/Perforator_bfg_9000.png"  alt="BOSCH BFG 9000">
+						 </a>
+						</p>
+						<p class="hammer-drill-price">
+						<!-- тут используем стиль: text-decoration [line-through] -->
+						 <span class="price-discount">32 500 Р.</span>
+						 <a class="go-purchase-button" href="#">25 500 P.</a>
+						</p>
+					</li>
+					<!-- карточка 2  -->
+					<li class="hammer-drill-bosch-all">
+						<h3>
+						  <a href="hammer-drill-bosch-2.html">
+						    <span class="hammer-drill-bosch">Перфоратор BOSCH</span>
+							<span class="hammer-drill-bosch-title">BFG 3000</span>
+						  </a>
+						</h3>
+						<p class="hammer-drill-img">
+						 <a href="hammer-drill-bosch-2.html" title="Hammer-drill Bosch BFG 3000">
+						  <img src="img/Perforator_bfg_3000.png" width="220" height="315" alt="BOSCH BFG 3000">
+						 </a>
+						</p>
+						<p class="hammer-drill-price">
+						 <!-- тут используем стиль: text-decoration [line-through] -->
+						 <span class="price-discount">22 500 Р.</span>
+						 <a class="go-purchase-button" href="#">15 500 P.</a>
+						</p>
+					</li>
+					<!-- карточка 3  -->
+					<li class="hammer-drill-bosch-all">
+						<h3>
+						  <a href="hammer-drill-bosch-3.html" title="Hammer-drill Bosch BFG 6000">
+						    <span class="hammer-drill-bosch">Перфоратор BOSCH</span>
+							<span class="hammer-drill-bosch-title">BFG 6000</span>
+						  </a>
+						</h3>
+						<p class="hammer-drill-img">
+						 <a href="hammer-drill-bosch-3.html">
+						  <img src="img/Perforator_bfg_6000.png" width="220" height="315" alt="BOSCH BFG 6000">
+						 </a>
+						</p>
+						<p class="hammer-drill-price">
+						 <!-- тут используем стиль: text-decoration [line-through] -->
+						 <span class="price-discount">30 500 Р.</span>
+						 <a class="go-purchase-button" href="#">25 500 P.</a>
+						</p>
+					</li>
+					<!-- карточка 4  -->
+					<li class="hammer-drill-bosch-all">
+						<h3>
+						  <a href="hammer-drill-bosch-4.html" title="Hammer-drill Bosch BFG 2000">
+						    <span class="hammer-drill-bosch">Перфоратор BOSCH</span>
+							<span class="hammer-drill-bosch-title">BFG 2000</span>
+						  </a>
+						</h3>
+						<p class="hammer-drill-img">
+						 <a href="hammer-drill-bosch-4.html">
+						  <img src="img/Perforator_bfg_2000.png" width="220" height="315" alt="BOSCH BFG 2000">
+						 </a>
+						</p>
+						<p class="hammer-drill-price">
+						 <a class="go-purchase-button" href="#">12 500 P.</a>
+						</p>
+					</li>
+				</ul>
+			  <a class="all-popular-goods" href="all_popular_goods.html" title="Все популярные товары">ВСЕ ПОПУЛЯРНЫЕ ТОВАРЫ</a>
+			</section>
+			<!-- тут вставляем "Популярные производители" -->
+			<section class="popular-manufacturer">
+			  <h2 class="popular-manufacturer-h2">ПОПУЛЯРНЫЕ ПРОИЗВОДИТЕЛИ:</h2>
+			  	<ul class="popular-manufacturer-list">
+					 <li><a href="https://www.bosch.com/" title="Bosch"><img src="img/bosch.png" alt="BOSСH"></a></li>
+					 <li><a href="http://makita.ru/" title="Makita"><img src="img/Makita.png" alt="Makita"></a></li>
+					 <li><a href="https://www.dewalt.com/" title="DeWalt"><img src="img/DeWalt.png" alt="DeWalt"></a></li>
+					 <li><a href="http://www.interskol.ru/" title="Interskol"><img src="img/Interskol.png" alt="ИНТЕРСКОЛ"></a></li>
+					 <li><a href="http://www.hitachi.com/" title="Hitachi"><img src="img/Hitachi.png" alt="HITACHI"></a></li>
+					 <li><a href="https://www.lg.com/" title="LG"><img src="img/Lg.png" alt="LG"></a></li>
+					 <li><a href="https://www.aeg.ru/" title="AEG"><img src="img/AEG.png" alt="AEG"></a></li>
+					 <li><a href="https://www.metabo.com/" title="Metabo"><img src="img/Metabo.png" alt="Metabo"></a></li>
+				</ul>
+			  <a class="all-manufacturer" href="manufacturer.html">ВСЕ ПРОИЗВОДИТЕЛИ</a>
+			</section>
+			<!-- тут вставляем "СЕРВИСЫ" -->
+			<section class="services">
+			  <h2>СЕРВИСЫ</h2>
+			   <p class="services-txt">
+				 Хороший интернет-магазин отличается от плохого не только ценами!
+				 Мы стараемся изо всех сил, чтобы сделать Ваши покупки приятными.
 			   </p>
-			   <br>
-			   <p class="company-txt-two">
-			     Мы можем доставить ваш товар в самые отдаленные точки России!
-				 Техномарт работает со многими транспортными компаниями: 
-			   </p>
-			   <ul class="logistics-companies">
-				 <li><a href="https://spb.dellin.ru/">Деловые линии</a></li>
-				 <li><a href="http://www.autotrading.ru/">Автотрейдинг</a></li>
-				 <li><a href="https://www.jde.ru/">ЖелДорЭкспедиция</a></li>
+			   <ul class="services-list">
+				<li><a href="delivery.html" title="Доставка">Доставка</a></li>
+				<li><a href="warranty.html" title="Гарантия">Гарантия</a></li>
+				<li><a href="credit.html" title="Кредит">Кредит</a></li>
 			   </ul>
-			   <!-- здесь вставляем элемент-ссылку на информацию о компании  -->
-			   <a href="about_company.html">Подробнее о компании</a>
-			</div>
-			<div class="contacts-maps">
-				<!-- контент этой части занимает 1/4 ширины страницы -->
-			  <h2>КОНТАКТЫ</h2>
-			   <p>Вы можете забрать товар сами,<br>
-				  заехав в наш офис:
-			   </p>
-			   <!-- здесь вставляем картинку-ссылку на карту, вызывающую всплывающее окно -->
-			   <a href="map.html"><img src="map.png" alt="Карта"/></a>
-			   <!-- здесь вставляем элемент E-Mail-ссылку на "Заблудились? Напишите нам!"  -->
-			   <p><a href="mailto:ask@technomart.ru">Заблудились? Напишите нам!</a></p> 
-			</div>
-		</section>
-		<footer class="main-footer">
+			   <!-- тут вставляем сменяемые страницы "Сервисов": "Доставка"; "Гарантия"; "Кредит" -->
+			   <div class="delivery">
+				<h2>ДОСТАВКА</h2>
+				<p class="delivery-txt">
+				  <!-- не уверен, что тут нужен <br> возможно это регулируется размером окна -->
+				  Мы с удовольствием доставим ваш товар прямо<br> 
+				  к вашему подъезду совершенно бесплатно!
+				  Ведь мы неплохо заработаем,<br> 
+				  поднимая его на ваш этаж!
+				</p>
+			   </div>
+			</section>
+			<!-- тут вставляем блоки информации имеющие непосредственное отношение к компании -->
+			<section class="company-mix">
+				<div class="company-info">
+					<!-- контент этой части занимает 3/4 ширины страницы -->
+				  <h2>КОМПАНИЯ "ТЕХНОМАРТ"</h2>
+				   <p class="company-txt-one">
+				     <!-- вероятно размер этого текстового блока регулируется размером окна -->
+				     Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для ремонта и строительства не оставит равнодушными любителей сэкономить на гастарбайтерах.
+				   </p>
+				   <br>
+				   <p class="company-txt-two">
+				     Мы можем доставить ваш товар в самые отдаленные точки России!
+					 Техномарт работает со многими транспортными компаниями: 
+				   </p>
+				   <ul class="logistics-companies">
+					 <li><a href="https://spb.dellin.ru/" title="Деловые линии">Деловые линии</a></li>
+					 <li><a href="http://www.autotrading.ru/" title="Автотрейдинг">Автотрейдинг</a></li>
+					 <li><a href="https://www.jde.ru/" title="ЖелДорЭкспедиция">ЖелДорЭкспедиция</a></li>
+				   </ul>
+				   <!-- здесь вставляем элемент-ссылку на информацию о компании  -->
+				   <a href="about_company.html" title="Подробнее о компании">Подробнее о компании</a>
+				</div>
+				<div class="contacts-maps">
+					<!-- контент этой части занимает 1/4 ширины страницы -->
+				  <h2>КОНТАКТЫ</h2>
+				   <p>Вы можете забрать товар сами,<br>
+					  заехав в наш офис:
+				   </p>
+				   <!-- здесь вставляем картинку-ссылку на карту, вызывающую всплывающее окно -->
+				   <a href="map.html" title="Карта"><img src="img/small_map.png" alt="Карта"/></a>
+				   <!-- здесь вставляем элемент E-Mail-ссылку на "Заблудились? Напишите нам!"  -->
+				   <p><a href="mailto:ask@technomart.ru" title="Напишите на E-Mail">Заблудились? Напишите нам!</a></p> 
+				</div>
+			</section>
+		</main>
+	<footer class="main-footer">
 			<!-- вставляем logo Техномарт -->
-			<a class="logo-bottom">
-				<img src="img/logo.svg" height="45" width="220" alt="Техномарт" title="Логотип магазина">
+			<a class="logo-bottom" href="#page_one_head">
+				<img src="img/technomart_logo_btn.png" height="45" width="220" alt="Техномарт" title="Логотип магазина">
 			</a>
 			<!-- вставляем первую нижнюю панель навигации -->
 			<nav class="footer-nav-one">
@@ -241,22 +244,23 @@
 				</ul>
 			</nav>
 			<p class="bottom-copyright">
-			&#x000A9;2010-2019 Компания &laquo;Техномарт&raquo;
-			Все права защищены
+				&#x000A9;2010-2019 Компания &laquo;Техномарт&raquo;
+				Все права защищены
 			</p>
-			 <a class="social-btn" href="#">Вконтакте</a>
-			 <a class="social-btn" href="#">Фейсбук</a>
-			 <a class="social-btn" href="#">Инстаграм</a>
+			<ul>
+			 <li><a class="social-btn" href="http://vk.com/" title="В Контакте"><img src="img/icon-vk.svg" alt="В Контакте"></a></li>
+			 <li><a class="social-btn" href="https://www.facebook.com/" title="Facebook"><img src="img/icon-fb.svg" alt="Facebook"></a></li>
+			 <li><a class="social-btn" href="https://www.instagram.com/" title="Instagram"><img src="img/icon-insta.svg" alt="Instagram"></a></li>
+			</ul>
 			<p class="bottom-E-Mail">
-			Обратная связь:
-			mail@htmlacademy.ru
+				Обратная связь:
+				mail@htmlacademy.ru
 			</p>
 			<p class="developer">
-			Разработано -
-			htmlacademy.ru
+				Разработано -
+				htmlacademy.ru
 			</p>
-		</footer>
-	</main>
+	</footer>
   </body>
 </html>
 
