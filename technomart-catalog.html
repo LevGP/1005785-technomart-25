@@ -5,13 +5,37 @@
     <title>HTML Academy: Техномарт каталог</title>
 	<meta name="description" content="" />
 	<meta name="keywords" content="" />
+	<link href="css/normalize.css" rel="stylesheet">
+	<link rel="stylesheet" href="css/style.css" type="text/css"/>
+	<link href="https://fonts.googleapis.com/css?family=Cuprum:400i|PT+Sans|PT+Sans+Caption|PT+Sans+Narrow&display=swap" rel="stylesheet">
   </head>
   <body>
 		<header class="main-header">
-			<!-- вставляем logo Техномарт -->
-			<a class="logo-head" href="index.html">
+			<div class="ribbon-wraper">
+			 <div class="head-logo-wrap"  tabindex="0">
+			  <!-- вставляем logo Техномарт -->
+			  <a class="logo-head" href="#page_one_head" name="page_one_head">
 				<img src="img/technomart_logo_btn.png" height="45" width="220" alt="Техномарт" title="Логотип магазина">
-			</a>
+			  </a>
+			 </div>
+			 <!-- здесь вставлена форма поиска + ссылки на закладки, корзину и оформление -->
+			 <div class="header-tools">
+				<form class="header-search" action="/echo" method="get">
+					<!-- ставим фоном увеличительное стекло  -->
+					<label class="look-for-lable" for="look-for">Поиск :</label>
+					<input class="search-window" type="search" id="look-for" placeholder="" title="Поле поиска">
+				</form>
+				<!-- ссылки на другие инструменты в header  -->
+				<ul>
+				  <!-- ставим фоном закладку  -->
+				  <li><a class="bookmark-lable" href="bookmarks.html" title="Закладки" alt="Закладки">Закладки :0</a></li>
+				  <!-- ставим фоном тележку пустую  -->
+				  <li><a class="header-cart" href="your_basket.htm" alt="Корзина" title="Корзина">Корзина :10 </a></li>
+				  <!-- здесь вставляем элемент-ссылку на оформление заказа  -->
+				  <li><a class="head-purchase-order" href="purchase_order.html" title="Оформить заказ" alt="Оформить заказ" >Оформить заказ</a></li>
+				</ul>
+			 </div>
+			</div>
 				<!-- вставляем слоган-заглавие -->
 				<h1 class="header-slogan">
 					 Интернет-магазин
@@ -23,14 +47,6 @@
 					<p class="top-phone-number">+7 (812)555-05-55</p>
 					<p class="head-address">г.Санкт-Петербург, ул. Большая Конюшенная, д.19/8</p>
 				  </div>
-				  <!-- здесь будут вставлены формы поиска, закладок, корзины -->
-				  <div class="header-forms">
-					<!--
-					  <form class="header-search"></form>
-					  <form class="header-bookmark"></form>
-					  <form class="header-basket"></form>
-					-->
-				  </div>
 				  <!-- здесь будут вставлены элементы входа пользователя и его регистрации -->
 				  <div class="user-fields">
 						<fieldset>
@@ -41,18 +57,20 @@
 						<li><a class="my-personal-directory" href="#">Личный кабинет</a></li>
 					</ul>
 				  </div>
-				<!-- вставляем navigation panel -->
-				<nav class="header-nav">
-					<ul class="top-nav">
-					  <li><a href="index.html">Главная</a></li>
-					  <li><a href="about_company.html">Компания</a></li>
-					  <li><a href="catalog.html">Каталог</a></li>
-					  <li><a href="news.html">Новости</a></li>
-					  <li><a href="special_offer.html">Спецпредложения</a></li>
-					  <li><a href="delivery.html">Доставка</a></li>
-					  <li><a href="contacts.html">Контакты</a></li>
-					</ul>
-				</nav>
+			<div class="navigation-wraper">
+			  <!-- вставляем navigation panel -->
+			  <nav class="header-nav">
+				<ul class="top-nav">
+					<li><a href="index.html">Главная</a></li>
+					<li><a href="about_company.html">Компания</a></li>
+					<li><a href="catalog.html">Каталог</a></li>
+					<li><a href="news.html">Новости</a></li>
+					<li><a href="special_offer.html">Спецпредложения</a></li>
+					<li><a href="delivery.html">Доставка</a></li>
+					<li><a href="contacts.html">Контакты</a></li>
+				</ul>
+			  </nav>
+			</div>
 		</header>
 		<main class="store-catalog">
 			<div class="catalog-nav">
@@ -282,11 +300,16 @@
 			&#x000A9;2010-2019 Компания &laquo;Техномарт&raquo;
 			Все права защищены
 			</p>
-			  <ul>
-				 <li><a class="social-btn" href="http://vk.com/" title="В Контакте"><img src="img/icon_vk.svg" alt="В Контакте"></a></li>
-				 <li><a class="social-btn" href="https://www.facebook.com/" title="Facebook"><img src="img/icon_fb.svg" alt="Facebook"></a></li>
-				 <li><a class="social-btn" href="https://www.instagram.com/" title="Instagram"><img src="img/icon_insta.svg" alt="Instagram"></a></li>
-			  </ul>
+			<div class="social-nav-wrap">
+			  <nav class="social-nav">
+				 <!-- ставим стилями фоном иконку "В Контакте" -->
+				 <a class="social-btn" href="http://vk.com/" alt="В Контакте" title="В Контакте" aria-label="В Контакте"></a>
+				  <!-- ставим стилями фоном иконку "Facebook" -->
+				 <a class="social-btn" href="https://www.facebook.com/"  alt="Facebook" title="Facebook" aria-label="Facebook"></a>
+				 <!-- ставим стилями фоном иконку "Instagram" -->
+				 <a class="social-btn" href="https://www.instagram.com/" alt="Instagram" title="Instagram" aria-label="Instagram"></a>
+			  </nav>
+			</div>
 			<p class="bottom-E-Mail">
 			Обратная связь:
 			mail@htmlacademy.ru
