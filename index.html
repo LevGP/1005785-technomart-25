@@ -5,13 +5,37 @@
     <title>HTML Academy: Техномарт</title>
 	<meta name="description" content="" />
 	<meta name="keywords" content="" />
+	<link href="css/normalize.css" rel="stylesheet">
+	<link rel="stylesheet" href="css/style.css" type="text/css"/>
+	<link href="https://fonts.googleapis.com/css?family=Cuprum:400i|PT+Sans|PT+Sans+Caption|PT+Sans+Narrow&display=swap" rel="stylesheet">
   </head>
   <body>
 		<header class="main-header">
-			<!-- вставляем logo Техномарт -->
-			<a class="logo-head" href="#page_one_head" name="page_one_head">
+			<div class="ribbon-wraper">
+			 <div class="head-logo-wrap"  tabindex="0">
+			  <!-- вставляем logo Техномарт -->
+			  <a class="logo-head" href="#page_one_head" name="page_one_head">
 				<img src="img/technomart_logo_btn.png" height="45" width="220" alt="Техномарт" title="Логотип магазина">
-			</a>
+			  </a>
+			 </div>
+			 <!-- здесь вставлена форма поиска + ссылки на закладки, корзину и оформление -->
+			 <div class="header-tools">
+				<form class="header-search" action="/echo" method="get">
+					<!-- ставим фоном увеличительное стекло  -->
+					<label class="look-for-lable" for="look-for">Поиск :</label>
+					<input class="search-window" type="search" id="look-for" placeholder="" title="Поле поиска">
+				</form>
+				<!-- ссылки на другие инструменты в header  -->
+				<ul>
+				  <!-- ставим фоном закладку  -->
+				  <li><a class="bookmark-lable" href="bookmarks.html" title="Закладки" alt="Закладки">Закладки :0</a></li>
+				  <!-- ставим фоном тележку пустую  -->
+				  <li><a class="header-cart" href="your_basket.htm" alt="Корзина" title="Корзина">Корзина :0 </a></li>
+				  <!-- здесь вставляем элемент-ссылку на оформление заказа  -->
+				  <li><a class="head-purchase-order" href="purchase_order.html" title="Оформить заказ" alt="Оформить заказ" >Оформить заказ</a></li>
+				</ul>
+			 </div>
+			</div>
 				<!-- вставляем слоган-заглавие -->
 			<h1 class="header-slogan">
 				Интернет-магазин
@@ -23,23 +47,15 @@
 				<p class="top-phone-number">+7 (812)555-05-55</p>
 				<p class="head-address">г.Санкт-Петербург, ул. Большая Конюшенная, д.19/8</p>
 			</div>
-				  <!-- здесь будут вставлены формы поиска, закладок, корзины -->
-			<div class="header-forms">
-					<!--
-					  <form class="header-search"></form>
-					  <form class="header-bookmark"></form>
-					  <form class="header-basket"></form>
-					-->
-			</div>
+				  
 				  <!-- здесь будут вставлены элементы входа пользователя и его регистрации -->
 				   <ul class="user-tools">
 					 <li class="login-link">Войти</li>
 					 <li class="registration-link">Регистрация</li>
 				   </ul>
-				  <!-- здесь вставляем элемент-ссылку на оформление заказа  -->
-				 <a class="head-purchase-order" href="purchase_order.html" title="Оформить заказ" alt="Оформить заказ" >Оформить заказ</a>
+			<div class="navigation-wraper">
 			  <!-- вставляем navigation panel -->
-			<nav class="header-nav">
+			  <nav class="header-nav">
 				<ul class="top-nav">
 					<li><a href="index.html">Главная</a></li>
 					<li><a href="about_company.html">Компания</a></li>
@@ -49,7 +65,8 @@
 					<li><a href="delivery.html">Доставка</a></li>
 					<li><a href="contacts.html">Контакты</a></li>
 				</ul>
-			</nav>
+			  </nav>
+			</div>
 		</header>
 		<main class="basic-content">
 			<!-- тут будет вставлена форма "Каталог" -->
@@ -215,10 +232,12 @@
 			</section>
 		</main>
 	<footer class="main-footer">
-			<!-- вставляем logo Техномарт -->
-			<a class="logo-bottom" href="#page_one_head">
+			<div class="footer-logo-wrap">
+			  <!-- вставляем logo Техномарт -->
+			  <a class="logo-bottom" href="#page_one_head">
 				<img src="img/technomart_logo_btn.png" height="45" width="220" alt="Техномарт" title="Логотип магазина">
-			</a>
+			  </a>
+			</div>
 			<!-- вставляем первую нижнюю панель навигации -->
 			<nav class="footer-nav-one">
 				<ul class="bottom-nav-one">
