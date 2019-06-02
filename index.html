@@ -12,9 +12,9 @@
   <body>
 		<header class="main-header">
 			<div class="ribbon-wraper">
-			 <div class="head-logo-wrap"  tabindex="0">
+			 <div class="header-logo-wrap"  tabindex="0">
 			  <!-- вставляем logo Техномарт -->
-			  <a class="logo-head" href="#page_one_head" name="page_one_head">
+			  <a class="logo-head" href="index.html" name="page_one_head">
 				<img src="img/technomart_logo_btn.png" height="45" width="220" alt="Техномарт" title="Логотип магазина">
 			  </a>
 			 </div>
@@ -73,9 +73,21 @@
 			<section class="catalog-preview">
 			 <!--  !!!заголовок КАТАЛОГ делаем невидимым!!!  -->
 				<h2 class="visually-hidden">КАТАЛОГ</h2>
-				<p class="catalog-slider">
-			 	  <img src="img/slider_2_man_w_drill.jpg" title="КАТАЛОГ" alt="КАТАЛОГ">
-				</p>
+				<ul class="catalog-slider">
+			 	  <li class="slide-two"><img src="img/slider_2_man_w_drill.jpg" title="КАТАЛОГ" alt="КАТАЛОГ"></li>
+				</ul>
+				<ul class="slide-switches">
+				  <li class="arrow-left">
+					<button class="left-arrow">
+					 Первый слайд
+					</button>
+				  </li>
+				  <li class="arrow-right">
+					<button class="right-arrow">
+					 Второй слайд
+					</button>
+				  </li>
+				</ul>
 			</section>
 			<!-- тут вставляем "Популярные товары" -->
 			<section class="popular-goods">
@@ -189,9 +201,9 @@
 				<h2 title="Заголовок ДОСТАВКА">ДОСТАВКА</h2>
 				<p class="delivery-txt">
 				  <!-- не уверен, что тут нужен <br> возможно это регулируется размером окна -->
-				  Мы с удовольствием доставим ваш товар прямо<br> 
+				  Мы с удовольствием доставим ваш товар прямо 
 				  к вашему подъезду совершенно бесплатно!
-				  Ведь мы неплохо заработаем,<br> 
+				  Ведь мы неплохо заработаем, 
 				  поднимая его на ваш этаж!
 				</p>
 			   </div>
@@ -211,9 +223,9 @@
 					 Техномарт работает со многими транспортными компаниями: 
 				   </p>
 				   <ul class="logistics-companies">
-					 <li><a href="https://spb.dellin.ru/" title="Деловые линии">Деловые линии</a></li>
-					 <li><a href="http://www.autotrading.ru/" title="Автотрейдинг">Автотрейдинг</a></li>
-					 <li><a href="https://www.jde.ru/" title="ЖелДорЭкспедиция">ЖелДорЭкспедиция</a></li>
+					 <li><a href="https://spb.dellin.ru/" title="Деловые линии"><p>Деловые линии</p></a></li>
+					 <li><a href="http://www.autotrading.ru/" title="Автотрейдинг"><p>Автотрейдинг</p></a></li>
+					 <li><a href="https://www.jde.ru/" title="ЖелДорЭкспедиция"><p>ЖелДорЭкспедиция</p></a></li>
 				   </ul>
 				   <!-- здесь вставляем элемент-ссылку на информацию о компании  -->
 				   <a href="about_company.html" title="Подробнее о компании">Подробнее о компании</a>
@@ -250,8 +262,10 @@
 			</nav>
 			<!-- вставляем контакты нижнего колонтитула -->
 			<div class="bottom-contacts">
-				<p class="bottom-address">г.Санкт-Петербург, ул. Большая Конюшенная, д.19/8</p>
-				<p class="bottom-phone-number">+7 (812)555-05-55</p>
+				<address class="bottom-address">
+				г.Санкт-Петербург, ул. Большая Конюшенная, д.19/8<br>
+				+7 (812)555-05-55
+				</address>
 			</div>
 			<!-- вставляем вторую нижнюю панель навигации -->  
 			<nav class="footer-nav-two">
@@ -269,11 +283,11 @@
 			<div class="social-nav-wrap">
 			  <nav class="social-nav">
 				 <!-- ставим стилями фоном иконку "В Контакте" -->
-				 <a class="social-btn" href="http://vk.com/" alt="В Контакте" title="В Контакте">.</a>
+				 <a class="social-btn" href="http://vk.com/" alt="В Контакте" title="В Контакте">VK</a>
 				  <!-- ставим стилями фоном иконку "Facebook" -->
-				 <a class="social-btn" href="https://www.facebook.com/"  alt="Facebook" title="Facebook"></a>
+				 <a class="social-btn" href="https://www.facebook.com/"  alt="Facebook" title="Facebook">F</a>
 				 <!-- ставим стилями фоном иконку "Instagram" -->
-				 <a class="social-btn" href="https://www.instagram.com/" alt="Instagram" title="Instagram"></a>
+				 <a class="social-btn" href="https://www.instagram.com/" alt="Instagram" title="Instagram">I</a>
 			  </nav>
 			</div>
 			<p class="bottom-E-Mail">
@@ -285,6 +299,24 @@
 				htmlacademy.ru
 			</p>
 	</footer>
+	<section class="user-pop-up-form">
+		<button class="window-close" type="button"></button>
+		<form class="user-email-form" action="https://echo.htmlacademy.ru"  method="post">
+			<p>
+			  <label for="username">Ваше имя:</label>
+			  <input type="text" name="name-surname" id="username" placeholder="Имя Фамилия" maxlength="30">
+			  <label for="user-e-mail">Ваш e-mail:</label>
+			  <input type="email" name="user-e-mail" id="user-e-mail" placeholder="email@example.com" maxlength="30">
+			</p>
+			<p>
+			  <p class="user-text-p"><label for="user-text">Текст письма:</label></p>
+			  <textarea rows="8" cols="60" name="user-letter" id="user-text" placeholder="В свободной форме"></textarea>
+			</p>
+			<p>
+			  <button class="user-e-mail-send" type="submit">ОТПРАВИТЬ</button>
+			</p>
+		</form>
+	</section>
   </body>
 </html>
 
