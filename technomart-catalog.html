@@ -12,9 +12,9 @@
   <body>
 		<header class="main-header">
 			<div class="ribbon-wraper">
-			 <div class="head-logo-wrap"  tabindex="0">
+			 <div class="header-logo-wrap"  tabindex="0">
 			  <!-- вставляем logo Техномарт -->
-			  <a class="logo-head" href="#page_one_head" name="page_one_head">
+			  <a class="logo-head" href="index.html">
 				<img src="img/technomart_logo_btn.png" height="45" width="220" alt="Техномарт" title="Логотип магазина">
 			  </a>
 			 </div>
@@ -90,34 +90,58 @@
 			<p class="price-sign">
 			 ЦЕНА:
 			</p>
+			<form class="chkbox-radio-filter" action="https://echo.htmlacademy.ru" method="get">
 			<!-- Тут вставляестя интерактивный элемент выбора цены -->
-			<div class="choose-the-price">
-				<!-- пока не нашёл как сделать правильно -->
-			</div>
-			<div class="from-to-choose">
-			 <p class="number-0">0</p>
-			 <p class="dash"> - </p>
-			 <p class="number-30000">30000</p>
-			</div>
-			<form class="chkbox-filter" action="https://echo.htmlacademy.ru" method="get"></form>
+				<div class="price-chooser">
+					<!-- пока не нашёл как сделать правильно -->
+				</div>
+			<!-- Тут поля выбора цены -->
+				<div class="choose-the-price">
+					<input class="minimum-cost" type="text" name="min-price" value="0" maxlength="10">
+					<p>-</p>
+					<input class="maximum-cost" type="text" name="max-price" value="30000" maxlength="10">
+				</div>
 			<fieldset>
 				<legend>ПРОИЗВОДИТЕЛИ:</legend>
 				<ul>
-				  <!-- тут либо делаем нормальные формы, либо CSS'ом ставим фоном checkbox'ы с галками и без  -->
-				  <li><a class="bosch-filter" alt="choose BOSCH" title="выбираем BOSCH">BOSCH</a></li>
-				  <li><a class="interskol-filter" alt="choose Interskol " title="выбираем ИНТЕРСКОЛ">ИНТЕРСКОЛ</a></li>
-				  <li><a class="makita-filter" alt="choose MAKITA" title="выбираем MAKITA">MAKITA</a></li>
-				  <li><a class="dewalt-filter" alt="choose DEWALT" title="выбираем DEWALT">DEWALT</a></li>
-				  <li><a class="hitachi-filter" alt="choose HITACHI" title="выбираем HITACHI">HITACHI</a></li>
+				  <!-- тут делаем нормальные формы,  CSS'ом ставим фоном checkbox'ы с галками и без  -->
+				  <li>
+					<input type="checkbox" name="producer" id="bosch-filter" value="bosch" checked>
+					<label for="bosch-filter">BOSCH</label>
+				  </li>
+				  <li>
+					<input type="checkbox" name="producer" id="interskol-filter" value="interskol">
+					<label for="interskol-filter">ИНТЕРСКОЛ</label>
+				  </li>
+				  <li>
+					<input type="checkbox" name="producer" id="makita-filter" value="makita" checked>
+					<label for="makita-filter">MAKITA</label>
+				  </li>
+				  <li>
+					<input type="checkbox" name="producer" id="dewalt-filter" value="dewalt">
+					<label for="dewalt-filter">DEWALT</label>
+				  </li>
+				  <li>
+					<input type="checkbox" name="producer" id="hitachi-filter" value="hitachi">
+					<label for="hitachi-filter">HITACHI</label>
+				  </li>
 				</ul>
 			</fieldset>
 			<fieldset>
 				<legend>ПИТАНИЕ:</legend>
 				<ul>
-				  <li><a class="circle-on-filter" alt="choose with battery" title="Аккумуляторные" />АККУМУЛЯТОРНЫЕ</a></li>
-				  <li><a class="circle-off-filter" alt="choose without battery" title="Сетевые" />СЕТЕВЫЕ</a></li>
+				  <li>
+					<input type="radio" name="power-type" id="accumulator" value="accumulator" checked>
+					<label for="accumulator">АККУМУЛЯТОРНЫЕ</label>
+				  </li>
+				  <li>
+					<input type="radio" name="power-type" id="wire-powered" value="wire_powered">
+					<label for="wire-powered">СЕТЕВЫЕ</label>
+				  </li>
 				</ul>
 			</fieldset>
+			<button class="filter-btn" type="submit">ПОКАЗАТЬ</button>
+			</form>
 		  </section>
 		  
 			<!-- Карточки товаров-->
@@ -304,10 +328,12 @@
 		  </section>
 		</main>
 		<footer class="main-footer">
-			<!-- вставляем logo Техномарт -->
-			<a class="logo-bottom" href="index.html">
-				<img src="img/technomart_logo_btn.png" height="45" width="220" alt="Техномарт" title="Логотип магазина">
-			</a>
+			<div class="footer-logo-wrap">
+				<!-- вставляем logo Техномарт -->
+				<a class="logo-bottom" href="index.html">
+					<img src="img/technomart_logo_btn.png" height="45" width="220" alt="Техномарт" title="Логотип магазина">
+				</a>
+			</div>
 			<!-- вставляем первую нижнюю панель навигации -->
 			<nav class="footer-nav-one">
 				<ul class="bottom-nav-one">
@@ -320,8 +346,10 @@
 			</nav>
 			<!-- вставляем контакты нижнего колонтитула -->
 			<div class="bottom-contacts">
-				<p class="bottom-address">г.Санкт-Петербург, ул. Большая Конюшенная, д.19/8</p>
-				<p class="bottom-phone-number">+7 (812)555-05-55</p>
+				<address class="bottom-address">
+				г.Санкт-Петербург, ул. Большая Конюшенная, д.19/8<br>
+				+7 (812)555-05-55
+				</address>
 			</div>
 			<!-- вставляем вторую нижнюю панель навигации -->  
 			<nav class="footer-nav-two">
@@ -339,11 +367,11 @@
 			<div class="social-nav-wrap">
 			  <nav class="social-nav">
 				 <!-- ставим стилями фоном иконку "В Контакте" -->
-				 <a class="social-btn" href="http://vk.com/" alt="В Контакте" title="В Контакте">.</a>
+				 <a class="social-btn" href="http://vk.com/" alt="В Контакте" title="В Контакте">VK</a>
 				  <!-- ставим стилями фоном иконку "Facebook" -->
-				 <a class="social-btn" href="https://www.facebook.com/"  alt="Facebook" title="Facebook">.</a>
+				 <a class="social-btn" href="https://www.facebook.com/"  alt="Facebook" title="Facebook">F</a>
 				 <!-- ставим стилями фоном иконку "Instagram" -->
-				 <a class="social-btn" href="https://www.instagram.com/" alt="Instagram" title="Instagram">.</a>
+				 <a class="social-btn" href="https://www.instagram.com/" alt="Instagram" title="Instagram">I</a>
 			  </nav>
 			</div>
 			<p class="bottom-E-Mail">
