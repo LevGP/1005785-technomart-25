@@ -7,12 +7,12 @@
 	<meta name="keywords" content="" />
 	<link href="css/normalize.css" rel="stylesheet">
 	<link rel="stylesheet" href="css/style.css" type="text/css"/>
-	<link href="https://fonts.googleapis.com/css?family=Cuprum:400i|PT+Sans|PT+Sans+Caption|PT+Sans+Narrow&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700|PT+Sans|PT+Sans+Caption|PT+Sans+Narrow&display=swap" rel="stylesheet">
   </head>
   <body>
 		<header class="main-header">
 			<div class="ribbon-wraper">
-			 <div class="header-logo-wrap"  tabindex="0">
+			 <div class="header-logo-wraper"  tabindex="0">
 			  <!-- вставляем logo Техномарт -->
 			  <a class="logo-head" href="index.html" name="page_one_head">
 				<img src="img/technomart_logo_btn.png" height="45" width="220" alt="Техномарт" title="Логотип магазина">
@@ -21,18 +21,37 @@
 			 <!-- здесь вставлена форма поиска + ссылки на закладки, корзину и оформление -->
 			 <div class="header-tools">
 				<form class="header-search" action="https://echo.htmlacademy.ru" method="get">
-					<!-- ставим фоном увеличительное стекло  -->
+					<!-- Поиск, ставим фоном увеличительное стекло  -->
+					<svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 17 17">
+					<path fill="#ffffff"
+                    d="M17 15.586l-3.542-3.542A7.465 7.465 0 0 0 15 7.5 7.5 7.5 0 1 0 7.5 15c1.71 0 3.282-.579 4.544-1.542L15.586 17 17 15.586zM2 7.5C2 4.467 4.467 2 7.5 2 10.532 2 13 4.467 13 7.5c0 3.032-2.468 5.5-5.5 5.5A5.506 5.506 0 0 1 2 7.5z" />
+                    </svg>
 					<label class="look-for-lable" for="look-for">Поиск :</label>
 					<input class="search-window" type="search" id="look-for" placeholder="" title="Поле поиска">
+					<button class="visually-hidden" type="submit">Отправить</button>
 				</form>
 				<!-- ссылки на другие инструменты в header  -->
 				<ul>
-				  <!-- ставим фоном закладку  -->
-				  <li><a class="bookmark-lable" href="bookmarks.html" title="Закладки" alt="Закладки">Закладки :0</a></li>
-				  <!-- ставим фоном тележку пустую  -->
-				  <li><a class="header-cart" href="your_basket.htm" alt="Корзина" title="Корзина">Корзина :0 </a></li>
-				  <!-- здесь вставляем элемент-ссылку на оформление заказа  -->
-				  <li><a class="head-purchase-order" href="purchase_order.html" title="Оформить заказ" alt="Оформить заказ" >Оформить заказ</a></li>
+				  <li>
+					<div class="bookmarks-wraper">
+						<!-- Закладки, ставим фоном закладку  -->
+						<svg xmlns="http://www.w3.org/2000/svg" width="14" height="16" viewBox="0 0 14 16"><path fill="#ffffff" d="M14 15c0 .55-.368.741-.818.426l-5.363-3.765c-.45-.315-1.187-.315-1.637 0L.818 15.426C.368 15.741 0 15.55 0 15V1c0-.55.45-1 1-1h12c.55 0 1 .45 1 1v14z"/></svg>
+						<a class="bookmark-lable" href="bookmarks.html" title="Закладки" alt="Закладки">Закладки :0</a>
+					</div>
+				  </li>
+				  <li>
+					<div class="basket-wraper">
+						<!-- Корзина, ставим фоном пустую тележку  -->
+						<svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 15 15"><circle fill="#ffffff" cx="4.5" cy="13.5" r="1.5"/><circle fill="#ffffff" cx="12.5" cy="13.5" r="1.5"/><path fill="#ffffff" d="M15 2H4.07l-.422-2H0v2h2.031l1.985 9H15V9H9.441L15 6.951z"/></svg>
+						<a class="header-cart" href="your_basket.htm" alt="Корзина" title="Корзина">Корзина :0 </a>
+					</div>
+				  </li>
+				  <li>
+					<div class="purchase-order-wraper">
+						<!-- здесь вставляем элемент-ссылку на оформление заказа  -->
+						<a class="header-purchase-order" href="purchase_order.html" title="Оформить заказ" alt="Оформить заказ" >Оформить заказ</a>
+					</div>
+				  </li>
 				</ul>
 			 </div>
 			</div>
@@ -43,15 +62,26 @@
 				и инструментов для ремонта
 			</h1>
 				  <!-- вставляем контакты верхнего колонтитула -->
-			<div class="head-contacts">
-				<p class="top-phone-number">+7 (812)555-05-55</p>
-				<p class="head-address">г.Санкт-Петербург, ул. Большая Конюшенная, д.19/8</p>
+			<div class="header-contacts">
+				<p class="header-phone-number">
+					<a class="top-phone-number" href="+7 (812)555-05-55">+7 (812)555-05-55</a>
+				</p>
+				<address class="header-address">г.Санкт-Петербург, ул. Большая Конюшенная, д.19/8</address>
 			</div>
-				  
-				  <!-- здесь будут вставлены элементы входа пользователя и его регистрации -->
-				   <ul class="user-tools">
-					 <li class="login-link">Войти</li>
-					 <li class="registration-link">Регистрация</li>
+				   <!-- здесь элементы входа пользователя и его регистрации -->
+				   <ul class="user-in-tools">
+					 <li class="login-link">
+						 <div class="login-wraper">
+							<a href="auth.html">
+								<svg xmlns="http://www.w3.org/2000/svg" width="20" height="17" viewBox="0 0 20 17"><path fill="#c5c5c5" d="M14.875 8.5L6 0v6H0v5h6v6z"/><path fill="#c5c5c5" d="M16.986 15.01h-5.027V17h5.027c2.178 0 3.004-1.81 3.029-3.026V3.028C19.99 1.811 19.164 0 16.986 0h-5.027v1.99h5.027c.839 0 .992.681 1.01 1.057v10.904c-.017.376-.171 1.059-1.01 1.059z"/></svg>Войти
+							</a>
+						 </div>
+					 </li>
+					 <li class="registration-link">
+						 <div class="registration-wraper">
+							<a href="register.html">Регистрация</a>
+						 </div>
+					 </li>
 				   </ul>
 			<div class="navigation-wraper">
 			  <!-- вставляем navigation panel -->
@@ -69,29 +99,81 @@
 			</div>
 		</header>
 		<main class="basic-content">
-			<!-- тут будет вставлена форма "Каталог" -->
+			<!-- Список наших предложений -->
 			<section class="catalog-preview">
-			 <!--  !!!заголовок КАТАЛОГ делаем невидимым!!!  -->
-				<h2 class="visually-hidden">КАТАЛОГ</h2>
-				<ul class="catalog-slider">
-			 	  <li class="slide-two"><img src="img/slider_2_man_w_drill.jpg" title="КАТАЛОГ" alt="КАТАЛОГ"></li>
-				</ul>
-				<ul class="slide-switches">
-				  <li class="arrow-left">
-					<button class="left-arrow">
-					 Первый слайд
-					</button>
-				  </li>
-				  <li class="arrow-right">
-					<button class="right-arrow">
-					 Второй слайд
-					</button>
-				  </li>
-				</ul>
+			 <!--  !!!заголовок МЫ ВАМ ПРЕДЛАГАЕМ делаем невидимым!!!  -->
+				<h2 class="visually-hidden">МЫ ВАМ ПРЕДЛАГАЕМ</h2>
+				  <!-- первый блок: плитки-предложения -->
+				  <div class="offer-tiles-one">
+				   <!-- плитки сверху -->
+				   <div class="top-tiles">
+					<div class="material-tile">
+						<div class="new">new</div>
+						<span class="tile-title">Материалы</span>
+						<span class="tile-subtitle">НА ЛЮБОЙ ВКУС</span>
+					</div>
+					<div class="tools-tile">
+						<span class="tile-title">Инструмент</span>
+						<span class="tile-subtitle">НА ВСЕ СЛУЧАИ</span>
+					</div>
+					<div class="technical-equipment-tile">
+						<span class="tile-title">Техника</span>
+						<span class="tile-subtitle">ДЛЯ СТРОЙКИ</span>
+					</div>
+				   </div>
+				  </div>
+				  <!-- Монтируем слайдер -->
+				  <div class="slider-block">
+					<ul class="slider">
+						<li class="glide-first-slide">
+							<div class="slide-one">
+								<img src="img/slider_1_man_w_ham_drill.jpg" width="620" height="266" border="0" alt="Первый слайд" title="Перфораторы"/>
+								<h3>Перфораторы</h3>
+								<p>Настоящие мужские игрушки</p>
+								<a class="red-button-open" href="catalog.html">Открыть каталог</a>
+							</div>
+						</li>
+						<li class="glide-second-slide">
+							<div class="slide-two">
+								<img src="img/slider_2_man_w_drill.jpg" width="620" height="266" border="0" alt="Второй слайд" title="Дрели"/>
+								<h3>Дрели</h3>
+								<p>Соседям на радость</p>
+							</div>
+							<a class="red-button-open" href="catalog.html">Открыть каталог</a>
+						</li>
+					</ul>
+					<div class="slid's-pagination">
+						<button type="button" class="point-bttn-pic-one" aria-label="Слайд один"></button>
+						<button type="button" class="point-bttn-pic-two" aria-label="Слайд два"></button>
+					</div>
+						<button type="button" class="arrow-to-left" aria-label="Слайд до">
+							<svg xmlns="http://www.w3.org/2000/svg" width="22" height="40" viewBox="0 0 22 40"><path fill="#FFF" d="M19.83-.035l2.089 2.099L4.13 19.947l17.847 17.939-2.09 2.099L-.048 19.947z"/></svg>
+						</button>
+						<button type="button" class="arrow-to-right" aria-label="Слайд после">
+							<svg xmlns="http://www.w3.org/2000/svg" width="22" height="40" viewBox="0 0 22 40"><path fill="#FFF" d="M2.098-.035L.009 2.064l17.789 17.883L-.048 37.886l2.089 2.099 19.935-20.038z"/></svg>
+						</button>
+				  </div>
+				  <!-- второй блок: плитки-предложения -->
+				  <div class="offer-tiles-two">
+				   <!-- плитки сбоку -->
+				   <div class="side-tiles">
+					<div class="discount-tile">
+						<span class="tile-title">Скидки 50%</span>
+						<span class="tile-subtitle">НА 350 ТОВАРОВ</span>
+					</div>
+					<div class="delivery-tile"></span>
+						<span class="tile-title">Доставка</span>
+						<span class="tile-subtitle">БЕСПЛАТНО</span>
+					</div>
+				   </div>
+				  </div>
 			</section>
 			<!-- тут вставляем "Популярные товары" -->
 			<section class="popular-goods">
-			  <h2 class="popular-goods-h2" title="Популярные товары">ПОПУЛЯРНЫЕ ТОВАРЫ:</h2>
+				<div class="popular-goods-head">
+				  <h2 class="popular-goods-h2" title="Популярные товары">ПОПУЛЯРНЫЕ ТОВАРЫ:</h2>
+				  <a class="all-popular-goods-red-bttn" href="#">Все популярные товары</a>
+				</div>
 			    <ul class="popular-goods-list">
 					<li class="hammer-drill-bosch-all">
 						<h3>
@@ -120,7 +202,7 @@
 						  </a>
 						</h3>
 						<p class="hammer-drill-img">
-						 <a href="hammer-drill-bosch-2.html" title="Hammer-drill Bosch BFG 3000">
+						 <a href="hammer-drill-bosch-t.html" title="Hammer-drill Bosch BFG 3000">
 						  <img src="img/perforator_bfg_3000.png" width="218" height="170" title="BFG 3000 view" alt="BOSCH BFG 3000">
 						 </a>
 						</p>
@@ -157,6 +239,7 @@
 							<span class="hammer-drill-bosch-title" title="BFG 2000">BFG 2000</span>
 						  </a>
 						</h3>
+						<div class="new">new</div>
 						<p class="hammer-drill-img">
 						 <a href="hammer-drill-bosch-4.html">
 						  <img src="img/perforator_bfg_2000.png" width="218" height="170" title="BFG 2000 view" alt="BOSCH BFG 2000">
@@ -238,12 +321,13 @@
 				   </p>
 				   <!-- здесь вставляем картинку-ссылку на карту, вызывающую всплывающее окно -->
 				   <a href="map.html" title="Карта"><img src="img/small_map.png" alt="Карта"/></a>
+				   
 				   <!-- здесь вставляем элемент E-Mail-ссылку на "Заблудились? Напишите нам!"  -->
 				   <p><a href="mailto:ask@technomart.ru" title="Напишите на E-Mail">Заблудились? Напишите нам!</a></p> 
 				</div>
 			</section>
 		</main>
-	<footer class="main-footer">
+		<footer class="main-footer">
 			<div class="footer-logo-wrap"></div>
 			  <!-- вставляем logo Техномарт -->
 			  <a class="logo-bottom" href="#page_one_head">
@@ -282,12 +366,18 @@
 			</p>
 			<div class="social-nav-wrap">
 			  <nav class="social-nav">
-				 <!-- ставим стилями фоном иконку "В Контакте" -->
-				 <a class="social-btn" href="http://vk.com/" alt="В Контакте" title="В Контакте">VK</a>
-				  <!-- ставим стилями фоном иконку "Facebook" -->
-				 <a class="social-btn" href="https://www.facebook.com/"  alt="Facebook" title="Facebook">F</a>
-				 <!-- ставим стилями фоном иконку "Instagram" -->
-				 <a class="social-btn" href="https://www.instagram.com/" alt="Instagram" title="Instagram">I</a>
+				 <!-- ставим иконку "В Контакте" -->
+				 <a class="social-btn" href="#" alt="Мы В Контакте" title="Мы В Контакте" aria-label="Мы В Контакте">
+					<svg xmlns="http://www.w3.org/2000/svg" width="26" height="15" viewBox="0 0 26 15"><path fill="#FFF" d="M16.138 11.51c.956-.309 2.18 2.04 3.483 2.939.978.681 1.727.534 1.727.534l3.473-.05s1.815-.112.957-1.554c-.071-.12-.503-1.069-2.585-3.022-2.177-2.043-1.882-1.712.739-5.244 1.597-2.153 2.236-3.468 2.036-4.028-.192-.539-1.365-.399-1.365-.399L20.69.713c-.381.001-.704.119-.851.515-.003.004-.621 1.666-1.445 3.079-1.741 2.989-2.436 3.148-2.724 2.961-.661-.433-.494-1.737-.494-2.664 0-2.897.432-4.105-.846-4.417-.427-.104-.739-.172-1.828-.182-1.392-.021-2.574 0-3.244.329-.445.223-.786.712-.579.74.26.035.843.16 1.155.586.401.552.389 1.789.389 1.789s.229 3.411-.54 3.834c-.528.29-1.25-.302-2.803-3.016-.793-1.388-1.392-2.922-1.392-2.922s-.116-.285-.326-.441c-.25-.185-.6-.244-.6-.244L.848.684S.29.7.085.946c-.182.218-.015.668-.015.668s2.909 6.881 6.203 10.347c3.02 3.182 6.452 2.971 6.452 2.971h1.555s.469-.054.709-.312c.224-.24.214-.691.214-.691s-.031-2.109.935-2.419z"/></svg>
+				 </a>
+				  <!-- ставим фоном иконку "Facebook" -->
+				 <a class="social-btn" href="#"  alt="Мы в Facebook" title="Мы в Facebook" aria-label="Мы в Facebook">
+					<svg xmlns="http://www.w3.org/2000/svg" width="12" height="22" viewBox="0 0 12 22"><path fill="#FFF" d="M12 4V0H8a4 4 0 0 0-4 4v4H0v4h4v10h4V12h4V8H8V4h4z"/></svg>
+				 </a>
+				 <!-- ставим фоном иконку "Instagram" -->
+				 <a class="social-btn" href="#" alt="Мы в Instagram" title="Мы в Instagram" aria-label="Мы в Instagram">
+					<svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 21 21"><path fill="#FFF" d="M18 0H3C1.35 0 0 1.35 0 3v15c0 1.65 1.35 3 3 3h15c1.65 0 3-1.35 3-3V3c0-1.65-1.35-3-3-3zm-7.5 7c1.93 0 3.5 1.57 3.5 3.5S12.43 14 10.5 14 7 12.43 7 10.5 8.57 7 10.5 7zM18 18H3V9h1.181A6.504 6.504 0 0 0 4 10.5a6.5 6.5 0 1 0 13 0 6.45 6.45 0 0 0-.181-1.5H18v9zm0-11h-4V3h4v4z"/></svg>
+				 </a>
 			  </nav>
 			</div>
 			<p class="bottom-E-Mail">
@@ -298,25 +388,27 @@
 				Разработано -
 				htmlacademy.ru
 			</p>
-	</footer>
-	<section class="user-pop-up-form">
-		<button class="window-close" type="button"></button>
-		<form class="user-email-form" action="https://echo.htmlacademy.ru"  method="post">
-			<p>
-			  <label for="username">Ваше имя:</label>
-			  <input type="text" name="name-surname" id="username" placeholder="Имя Фамилия" maxlength="30">
-			  <label for="user-e-mail">Ваш e-mail:</label>
-			  <input type="email" name="user-e-mail" id="user-e-mail" placeholder="email@example.com" maxlength="30">
-			</p>
-			<p>
-			  <p class="user-text-p"><label for="user-text">Текст письма:</label></p>
-			  <textarea rows="8" cols="60" name="user-letter" id="user-text" placeholder="В свободной форме"></textarea>
-			</p>
-			<p>
-			  <button class="user-e-mail-send" type="submit">ОТПРАВИТЬ</button>
-			</p>
-		</form>
-	</section>
+		</footer>
+		
+		<!-- Всплывающее модальное окно -->
+		<section class="user-pop-up-form">
+			<button class="window-close" type="button"></button>
+			<form class="user-email-form" action="https://echo.htmlacademy.ru"  method="post">
+				<p>
+				  <label for="username">Ваше имя:</label>
+				  <input type="text" name="name-surname" id="username" placeholder="Имя Фамилия" maxlength="30">
+				  <label for="user-e-mail">Ваш e-mail:</label>
+				  <input type="email" name="user-e-mail" id="user-e-mail" placeholder="email@example.com" maxlength="30">
+				</p>
+				<p>
+				  <p class="user-text-p"><label for="user-text">Текст письма:</label></p>
+				  <textarea rows="8" cols="60" name="user-letter" id="user-text" placeholder="В свободной форме"></textarea>
+				</p>
+				<p>
+				  <button class="user-e-mail-send" type="submit">ОТПРАВИТЬ</button>
+				</p>
+			</form>
+		</section>
   </body>
 </html>
 
