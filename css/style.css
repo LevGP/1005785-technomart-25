@@ -1,0 +1,524 @@
+body {
+	margin: 0;
+	padding: 0;
+	font-family: 'Cuprum', 'Arial', sans-serif;
+	font-size: 17px;
+	line-height: 18px;
+	font-weight: 700;
+}
+
+a   {
+	text-decoration: none;
+}
+
+h1  {
+	margin: 0;
+}
+
+h2 {
+	font-size: 30px;
+	line-height: 30px;
+	font-weight: 400;
+	text-transform: uppercase;
+	margin: 0;
+}
+
+p {
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 24px;
+  margin: 0;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.visually-hidden {
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	margin: -1px;
+	border: 0;
+	padding: 0;
+	clip: rect(0 0 0 0);
+	overflow: hidden;
+}
+
+/* Header */
+.main-header {
+	margin-top: 0;
+	margin: 0 auto;
+	width: 1280px;
+	background: #f4f7f9;
+}
+
+/* Полоска с логотипом, поиском, закладками и корзиной */
+.ribbon-wraper {
+	margin: auto;
+	width: 1280px;
+	min-height: 42px;
+	background-color: #293449;
+	display: flex;
+	flex-flow: row || nowrap;
+	align-items: bottom;
+}
+
+/* Логотип */
+.logo-head {
+	margin-left: 130px;
+	margin-right: 16px;
+	width: 220px;
+}
+
+.header-tools {
+	display: flex;
+	font-family: Cuprum;
+	font-size: 17px;
+	color: #fff;
+}
+	
+/* фоновая иконка ПОИСК  */
+.header-search-icon {
+	background-image:
+	url(../img/icon_search.svg);
+	width: 17px;
+	height: 17px;
+	display: flex;
+}
+
+/* Форма поля поиска */
+.look-for-lable {
+	color: #a9aeb6;
+}
+
+.search-window {
+	background: #293449;
+	border: #293449 solid 1px;
+}
+
+/* закладки, корзина, кнопка оформить */
+.bookmarks-and-purchase {
+	margin-left: 0;
+	padding-left: 0;
+	list-style-type: none;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 42px;
+	font-size: 17px;
+	line-height: 17px;
+	color: #ffffff;
+	background-color: #293449;
+	width: 151px;
+	height: 42px;
+}
+
+.bookmarks-and-purchase a {
+	color: #a9aeb6;
+}
+
+/* фоновая иконка ЗАКЛАДКИ  */
+.bookmarks-icon {
+	background-image:
+	url(../img/icon_bookmark.svg);
+	width: 17px;
+	height: 17px;
+	display: flex;
+	position: absolute;
+}
+
+/* фоновая иконка Корзина  */
+.basket-icon {
+	background-image:
+	url(../img/empty_cart_icon.svg);
+	width: 17px;
+	height: 17px;
+	display: flex;
+	position: absolute;
+}
+
+.bookmark-lable,
+.header-cart,
+.purchase-order-wraper {
+	position: relative;
+	display: block;
+	flex-shrink: 0;
+	margin: 0;
+	padding: 0;
+	padding-top: 12px;
+
+}
+
+/* Оформить заказ  */
+.purchase-order-wraper {
+	background-color: #63a63e;
+	display: flex;
+	margin-left: 25px;
+	width: 150px;
+	height: 42px;
+	justify-content: center;
+	align-items: baseline;
+}
+
+
+/* Слоган */
+.header-slogan {
+	position: absolute;
+	width: 198px;
+	height: 61px;
+	margin-left: 180px;
+	margin-top: 57px;
+
+	font-family: Cuprum;
+	font-style: italic;
+	font-weight: normal;
+	font-size: 16px;
+	line-height: 23px;
+	
+	display: flex;
+	align-items: center;
+	color: #EE3643;
+}
+
+/* Телефонный номер */
+
+.phone-icon {
+	background-image:
+	url(../img/icon_phone.svg);
+	width: 19px;
+	height: 19px;
+	display: flex;
+	position: absolute;
+}
+
+.top-phone-number {
+	position: absolute;
+	left: 500px;
+	right: 529px;
+	top: 88px;
+	bottom: 750px;
+
+	font-family: Cuprum;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 21px;
+	line-height: 21px;
+	
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	color: #EE3643;
+	
+	border: solid 3px #ffffff;
+	width: 278px;
+	height: 53px;
+	
+	
+}
+
+.head-address {
+	position: absolute;
+	left: 500px;
+	right: ;
+	top: ;
+	bottom: ;
+	margin: 0;
+	padding: 0;
+	padding-top: 11px;
+
+	font-family: Cuprum;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 14px;
+	line-height: 24px;
+	
+	display: flex;
+	align-items: center;
+	text-align: center;
+
+	color: #32425C;
+}
+
+.user-in-tools {
+	margin-left: 0;
+	padding-left: 0;
+	list-style-type: none;
+}
+
+.login-link {
+	position: relative;
+	margin-right: 10px;
+	padding: 12px 26px 12px 47px;
+}
+
+.login-icon {
+	background-image:
+	url(../img/icon_login.svg);
+	width: 17px;
+	height: 17px;
+}
+
+/* Верхнее навигационное меню   */
+.top-nav {
+	margin-left: 0;
+	padding-left: 0;
+	list-style-type: none;
+	margin-top: 39px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 60px;
+	font-size: 17px;
+	line-height: 17px;
+	color: #ffffff;
+	background-color: #32425c;
+	box-shadow: inset 0 -5px 0 -0 #293449;		
+}
+
+.top-nav a {
+	margin: 0;
+	padding: 21px 30px 21px;
+	display: block;
+	color: #a9aeb6;
+}
+
+.offer-tiles {
+	flex-direction: row-reverse;
+}
+
+.top-tiles {
+	display: flex;
+	flex-wrap: nowrap;
+}
+
+.side-tiles {
+	display: flex;
+	flex-wrap: nowrap;
+}
+
+.tile-title {
+	font-family: Cuprum;
+	font-style: bold;
+	font-weight: normal;
+	font-size: 24px;
+	line-height: 30px;
+	color: #ffffff;
+	margin: 0;
+	padding: 22px 0 13px 22px;
+}
+
+.tile-subtitle {
+	font-family: Cuprum;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 14px;
+	line-height: 18px;
+	color: #ffffff;
+}
+
+.material-tile {
+	position: absolute;
+	display: flex;
+	top: 379px;
+	right: 130px;
+	width: 300px;
+	height: 123px;
+	background-color: #ffbf47;
+}
+
+.on-any-taste-padding {
+	position: absolute;
+	display: flex;
+	width: 135px;
+	height: 38px;
+	background-color: #e5ac40; 
+}
+
+.paint-icon {
+	background-image:
+	url(../img/empty_cart_icon.svg) no-repeat 0 0;
+	width: 44px;
+	height: 65px;
+	display: flex;
+	position: absolute;
+}
+
+.tools-tile {
+	position: absolute;
+	display: flex;
+	top: 379px;
+	right: 450px;
+	width: 300px;
+	height: 123px;
+	background-color: #3bbce3;
+}
+
+.on-any-case-padding {
+	position: absolute;
+	display: flex;
+	width: 135px;
+	height: 38px;
+	background-color: #35a9cc;
+}	
+
+.drill-icon {
+	background-image:
+	url(../img/drill_icon.svg) no-repeat 0 0;
+	width: 75px;
+	height: 61px;
+	display: flex;
+	position: absolute;
+}
+
+.technical-equipment-tile {
+	position: absolute;
+	display: flex;
+	top: 379px;
+	right: 770px;
+	width: 300px;
+	height: 123px;
+	background-color: #cc92c3;
+}
+
+.for-the-construction-padding {
+	position: absolute;
+	display: flex;
+	width: 135px;
+	height: 38px;
+	background-color: #c682c2;
+}
+
+.tractor-icon {
+	background-image:
+	url(../img/tractor_icon.svg) no-repeat 0 0;
+	width: 78px;
+	height: 62px;
+	display: flex;
+	position: absolute;
+}
+
+.discount-tile {
+	position: absolute;
+	display: flex;
+	top: 524px;
+	right: 770px;
+	width: 300px;
+	height: 123px;
+	background-color: #8fcd8e;
+}
+
+.discount-fifty-padding {
+	position: absolute;
+	display: flex;
+	width: 135px;
+	height: 38px;
+	background-color: #80c180;
+}
+
+.full-cart-icon {
+	background-image:
+	url(../img/full_cart_icon.svg) no-repeat 0 0;
+	width: 59px;
+	height: 72px;
+	display: flex;
+	position: absolute;
+}
+
+.delivery-tile {
+	position: absolute;
+	display: flex;
+	top: 665px;
+	right: 770px;
+	width: 300px;
+	height: 123px;
+	background-color: #ffc047;
+}
+
+.delivery-padding {
+	position: absolute;
+	display: flex;
+	width: 135px;
+	height: 38px;
+	background-color: #e5ac40;
+}
+
+.delivery-car-icon {
+	background-image:
+	url(../img/truck_icon.svg) no-repeat 0 0;
+	width: 78px;
+	height: 63px;
+	display: flex;
+	position: absolute;
+}
+
+
+
+/* слайдер */
+.slider {
+	margin-left: 0;
+	padding-left: 0;
+	list-style-type: none;
+}
+
+/* управление слайдером */
+.arrow-to-left-icon {
+	display: block;
+	background-image:
+	url(../img/icon_left.svg);
+	width: 22px;
+	height: 40px;
+	top: ;
+	left: ;
+	border-top: none;
+	border-right: none;
+	position: ;
+}
+.arrow-to-right-icon {
+	display: block;
+	background-image:
+	url(../img/icon_right.svg);
+	width: 22px;
+	height: 40px;
+	top:;
+	left:;
+	border-top: none;
+	border-right: none;
+}
+
+
+/* кнопки социальных сетей */
+/* временный background */
+.social-nav-wrap {
+	background: #32425C;
+	display: inline-block;
+}
+
+.vKontakte-icon {
+	background-image:
+	url(../img/icon_vk.svg);
+	width: 17px;
+	height: 17px;
+	float: left;
+}
+
+.Facebook-icon {
+	background-image:
+	url(../img/icon_fb.svg);
+	width: 17px;
+	height: 17px;
+	float: left; 
+    position: relative;
+}
+
+.Instagram-icon {
+	background-image:
+	url(../img/icon_insta.svg);
+	width: 17px;
+	height: 17px;
+	float: left; 
+    position: relative;
+}
